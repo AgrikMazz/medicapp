@@ -1,0 +1,15 @@
+nltk
+fitz
+neo4j
+torch-geometric
+jsonlines
+networkx
+igraph
+leidenalg
+scikit-learn
+hnswlib
+sentence-transformers
+transformers
+torch
+streamlit
+python-dotenv

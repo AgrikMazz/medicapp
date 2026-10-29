@@ -1,0 +1,326 @@
+{
+  "0": {
+    "summary_texts": [
+      "Intermittent preventive treatment with sulfadoxine‑pyrimethamine (IPTi‑SP) in infants provides 1–2 months of antimalarial protection, with efficacy depending on drug pharmacokinetics, parasite sensitivity, and mosquito exposure; studies show reduced malaria incidence during treatment and minimal rebound risk post‑dose.",
+      "SP gave a temporary 30‑day delay in first malaria episode for children 3 mo–20 yr in Mali, but after SP levels waned, cases surged, and overall malaria incidence matched the untreated group."
+    ],
+    "relation_texts": [
+      "IPTi-SP compared with placebo group",
+      "SP provides antimalarial activity",
+      "Coulibaly et al. study conducted in Bandiagara",
+      "Bandiagara located in Mali",
+      "Plasmodium parasites are quite sensitive",
+      "IPTi-SP effect assessed by comparing placebo group",
+      "SP delayed median time to first episode of malaria",
+      "SP exhibited protective effect against malaria",
+      "Mendendez et al. (1997) similar to SP",
+      "2002 study conducted in Bandiagara",
+      "Bandiagara located in Mali"
+    ],
+    "source_pages": [
+      13,
+      13,
+      13,
+      13,
+      13,
+      13,
+      13,
+      13,
+      13,
+      13,
+      13,
+      13,
+      13
+    ],
+    "source_chunk_ids": [
+      "3843451694087f3d939734ff",
+      "3843451694087f3d939734ff",
+      "3843451694087f3d939734ff",
+      "3843451694087f3d939734ff",
+      "3843451694087f3d939734ff",
+      "3843451694087f3d939734ff",
+      "3843451694087f3d939734ff",
+      "43f9848e024b649cb7b117c0",
+      "43f9848e024b649cb7b117c0",
+      "43f9848e024b649cb7b117c0",
+      "43f9848e024b649cb7b117c0",
+      "43f9848e024b649cb7b117c0",
+      "43f9848e024b649cb7b117c0"
+    ],
+    "HL_summary": "Intermittent preventive treatment with sulfadoxine‑pyrimethamine (IPTi‑SP) in infants offers a short‑term antimalarial shield, typically lasting 1–2 months. Its effectiveness hinges on the drug’s pharmacokinetics, parasite susceptibility, and local mosquito exposure. In Mali’s Bandiagara region, studies have shown that IPTi‑SP delays the first malaria episode by roughly 30 days in children aged 3 months to 20 years, yet once drug levels fall, incidence rises to match untreated controls, indicating a temporary benefit rather than sustained protection. Comparative trials against placebo confirm SP’s antimalarial activity, though rebound risk remains low. Overall, IPTi‑SP provides a measurable, albeit brief, reduction in malaria incidence, contingent on parasite sensitivity and drug persistence.",
+    "title": "IPTi‑SP: Brief Antimalarial Protection, Limited Duration"
+  },
+  "1": {
+    "summary_texts": [
+      "Committee reviewed IPTi‑SP trials and pooled data, finding 20–30% reduction in infant clinical malaria in high/moderate transmission areas, with minimal rebound. No strong evidence for reduced hospitalizations. Effect comparable to bed nets, supporting further investment in IPTi‑SP as a public health strategy.",
+      "Menendez et al. (1997) showed pyrimethamine‑dapsone reduced malaria during treatment but increased post‑therapy episodes, indicating continuous chemoprophylaxis may impair immunity and cause rebound in high‑transmission settings."
+    ],
+    "relation_texts": [
+      "Menendez conducted study in Ifakara",
+      "Menendez study conducted in Tanzania",
+      "IOM committee concluded study illustrates worst-case Menendez",
+      "IPTi-SP tested at site Ifakara",
+      "pyrimethamine-dapsone syrup prevented malaria malaria",
+      "pyrimethamine-dapsone syrup administered weekly intervention period",
+      "Menendez conducted trial in Ifakara"
+    ],
+    "source_pages": [
+      3,
+      10,
+      10,
+      10,
+      10,
+      10,
+      10,
+      10,
+      12
+    ],
+    "source_chunk_ids": [
+      "b468f8cf1138a9d742f3c324",
+      "9665853c646586101a12c2cc",
+      "9665853c646586101a12c2cc",
+      "9665853c646586101a12c2cc",
+      "9665853c646586101a12c2cc",
+      "9665853c646586101a12c2cc",
+      "9665853c646586101a12c2cc",
+      "9665853c646586101a12c2cc",
+      "66dba268409e127455c76d66"
+    ],
+    "HL_summary": "The committee’s review of IPTi‑SP (intermittent preventive treatment in infants with sulfadoxine‑pyrimethamine) pooled data from multiple trials, showing a 20–30 % reduction in clinical malaria among infants in high‑ and moderate‑transmission settings, with no significant rebound or increase in hospitalisations. This efficacy is comparable to that of insecticide‑treated bed nets, underscoring IPTi‑SP’s potential as a cost‑effective public‑health intervention. In contrast, Menendez et al. (1997) found that weekly pyrimethamine‑dapsone prophylaxis in Ifakara, Tanzania, lowered malaria during treatment but led to a surge of post‑therapy episodes, suggesting that continuous chemoprophylaxis can impair natural immunity and provoke rebound malaria in high‑transmission areas. The IOM committee highlighted this study as a cautionary example, noting that IPTi‑SP’s intermittent dosing may avoid the rebound seen with continuous regimens. Overall, the evidence supports continued investment in IPTi‑SP while recognising the risks of continuous chemoprophylaxis in similar settings.",
+    "title": "IPTi‑SP: Effective, Cost‑Efficient, No Rebound Risk"
+  },
+  "2": {
+    "summary_texts": [
+      "EPI, launched by WHO in 1974, expanded immunization coverage from 5% to 79% DPT3 globally by 2005, aided by GAVI; a standard 6‑10‑14 week schedule was adopted to maximize protection with minimal early‑age risk."
+    ],
+    "relation_texts": [
+      "WHO initiated Expanded Program on Immunization",
+      "IPTi-SP uses Expanded Program on Immunization",
+      "Global Alliance for Vaccines and Immunization launched in 2000",
+      "Global Alliance for Vaccines and Immunization provides financial resources"
+    ],
+    "source_pages": [
+      11,
+      11,
+      11,
+      11,
+      11
+    ],
+    "source_chunk_ids": [
+      "026ac964cac864b67588047c",
+      "026ac964cac864b67588047c",
+      "026ac964cac864b67588047c",
+      "026ac964cac864b67588047c",
+      "026ac964cac864b67588047c"
+    ],
+    "HL_summary": "The Expanded Programme on Immunization (EPI), launched by the World Health Organization (WHO) in 1974, dramatically increased global vaccine coverage, raising DPT3 uptake from 5 % to 79 % by 2005. A key strategy was the adoption of a standardized 6‑10‑14‑week schedule, which optimised protection while minimising early‑age risks. The Global Alliance for Vaccines and Immunization (GAVI), founded in 2000, has been instrumental in providing the financial resources that underpin EPI’s success, enabling widespread access to vaccines and supporting initiatives such as IPTi‑SP that integrate new interventions into existing immunisation frameworks.",
+    "title": "EPI, GAVI, and Global Vaccine Coverage Expansion <|constrain|>2025"
+  },
+  "3": {
+    "summary_texts": [
+      "Gap: No data on IPTi‑SP impact on infant mortality; need evidence from pilot projects to guide national decisions on initiation, expansion, maintenance, or discontinuation, and to address programmatic issues in real‑world use. The committee reviewed consortium data and literature over a 3‑day meeting and follow‑up communications."
+    ],
+    "relation_texts": [
+      "Committee Process held 3-day meeting",
+      "Committee Process involved teleconferences",
+      "Committee Process included e-mail communications",
+      "Committee Process included conference calls",
+      "Consortium composed of autonomous institutions",
+      "Consortium focuses on malaria research"
+    ],
+    "source_pages": [
+      4,
+      4,
+      4,
+      4,
+      4,
+      4,
+      4
+    ],
+    "source_chunk_ids": [
+      "68eb7381671f1f52f404c6f9",
+      "68eb7381671f1f52f404c6f9",
+      "68eb7381671f1f52f404c6f9",
+      "68eb7381671f1f52f404c6f9",
+      "68eb7381671f1f52f404c6f9",
+      "68eb7381671f1f52f404c6f9",
+      "68eb7381671f1f52f404c6f9"
+    ],
+    "HL_summary": "The core theme centers on the urgent need for evidence regarding the impact of IPTi‑SP (intermittent preventive treatment of malaria in infants with sulfadoxine‑pyrimethamine) on infant mortality. A committee convened a three‑day in‑person meeting, supplemented by teleconferences, conference calls, and email exchanges, to review data from a consortium of autonomous institutions dedicated to malaria research. The goal was to generate robust evidence from pilot projects that would inform national policy decisions—whether to initiate, expand, maintain, or discontinue IPTi‑SP programs—and to identify practical challenges in real‑world implementation. The committee’s comprehensive review of consortium data and existing literature aims to fill the current knowledge gap and guide evidence‑based malaria control strategies.",
+    "title": "Evidence Needed for IPTi‑SP Impact on Infant Mortality"
+  },
+  "4": {
+    "summary_texts": [
+      "Assessment of intermittent preventive treatment for malaria in infants (IPTi-SP) reviewed, noting its potential efficacy compared to prior continuous chemoprophylaxis trials in Tanzania, and its integration with existing immunization schedules and supplementary interventions in high‑malaria African countries."
+    ],
+    "relation_texts": [
+      "WHO provides immunization schedule",
+      "CDC reports declines in measles transmission",
+      "EPI administers vitamin A",
+      "polio eradication program introduced supplemental immunization activities",
+      "IPTi-SP uses sulfadoxine-pyrimethamine"
+    ],
+    "source_pages": [
+      12,
+      12,
+      12,
+      12,
+      12,
+      12
+    ],
+    "source_chunk_ids": [
+      "66dba268409e127455c76d66",
+      "66dba268409e127455c76d66",
+      "66dba268409e127455c76d66",
+      "66dba268409e127455c76d66",
+      "66dba268409e127455c76d66",
+      "66dba268409e127455c76d66"
+    ],
+    "HL_summary": "The cluster examines how intermittent preventive treatment for malaria in infants (IPTi‑SP) can be effectively integrated into routine childhood immunization programs in high‑malaria African settings. It highlights evidence that IPTi‑SP, using sulfadoxine‑pyrimethamine, may outperform earlier continuous chemoprophylaxis trials in Tanzania, offering a targeted, low‑frequency intervention that aligns with existing vaccine schedules. The discussion underscores the synergy between IPTi‑SP and other public health initiatives—such as WHO‑recommended immunization timetables, CDC‑reported reductions in measles transmission, EPI‑delivered vitamin A supplementation, and polio eradication’s supplemental immunization activities—illustrating a comprehensive, multi‑layered strategy to reduce infant morbidity and mortality while maintaining high coverage and programmatic efficiency.",
+    "title": "Integrating IPTi‑SP into Routine Childhood Immunization Programs in Africa"
+  },
+  "5": {
+    "summary_texts": [
+      "Investigator-led IPTi-SP trials in Tanzania showed continuous chemoprophylaxis reduced malaria during treatment but increased risk post‑cessation, delaying immunity acquisition; IPTi-SP aims to protect infants with few doses without significantly impairing natural immunity."
+    ],
+    "relation_texts": [
+      "investigators would become leaders in Consortium",
+      "investigators tested IPTi-SP",
+      "IPTi-SP administered concomitantly when infants receive EPI vaccines",
+      "IPTi-SP significantly diminish incidence of malaria morbidity",
+      "continuous chemoprophylaxis reduced frequency of clinical malaria",
+      "continuous chemoprophylaxis experienced higher rates of clinical malaria"
+    ],
+    "source_pages": [
+      12,
+      12,
+      12,
+      12,
+      12,
+      12,
+      12
+    ],
+    "source_chunk_ids": [
+      "1aa648220e88a8bbbd5529a4",
+      "1aa648220e88a8bbbd5529a4",
+      "1aa648220e88a8bbbd5529a4",
+      "1aa648220e88a8bbbd5529a4",
+      "1aa648220e88a8bbbd5529a4",
+      "1aa648220e88a8bbbd5529a4",
+      "1aa648220e88a8bbbd5529a4"
+    ],
+    "HL_summary": "Investigator‑led trials of intermittent preventive treatment in infants (IPTi‑SP) in Tanzania demonstrated that giving sulfadoxine‑pyrimethamine (SP) alongside routine EPI vaccines significantly lowers malaria morbidity during the treatment period. However, continuous chemoprophylaxis was associated with a rebound increase in clinical malaria after cessation, suggesting delayed acquisition of natural immunity. The IPTi‑SP strategy therefore aims to protect infants with a limited number of doses, balancing immediate protection against the risk of impairing long‑term immunity. These findings positioned the investigators as emerging leaders within the consortium, highlighting IPTi‑SP’s potential to reduce malaria incidence while preserving the development of host immunity.",
+    "title": "IPTi‑SP: Balancing Infant Protection and Immunity Development"
+  },
+  "6": {
+    "summary_texts": [
+      "Committee recommends independent audit of pooled IPTi‑SP data, supports implementation in high‑transmission sub‑Saharan Africa where SP resistance is low, and urges monitoring of resistance, safety, effectiveness, cost‑effectiveness, and mortality impact during pilot roll‑outs."
+    ],
+    "relation_texts": [
+      "committee recommends SWG",
+      "committee recommends IPTi-SP",
+      "committee recommends sub-Saharan Africa",
+      "committee recommends public health authorities",
+      "committee recommends monitoring efforts",
+      "artemisinin-based combination therapy likely lessens threat of dissemination of SP resistance"
+    ],
+    "source_pages": [
+      4,
+      4,
+      4,
+      4,
+      4,
+      4,
+      4
+    ],
+    "source_chunk_ids": [
+      "cfd9f393ce455dae9c49251f",
+      "cfd9f393ce455dae9c49251f",
+      "cfd9f393ce455dae9c49251f",
+      "cfd9f393ce455dae9c49251f",
+      "cfd9f393ce455dae9c49251f",
+      "cfd9f393ce455dae9c49251f",
+      "cfd9f393ce455dae9c49251f"
+    ],
+    "HL_summary": "The committee endorses an independent audit of pooled IPTi‑SP (intermittent preventive treatment in infants with sulfadoxine‑pyrimethamine) data and advocates for its rollout in high‑transmission sub‑Saharan African settings where SP resistance remains low. It stresses the need for rigorous monitoring of resistance patterns, safety, effectiveness, cost‑effectiveness, and mortality outcomes during pilot implementations. The committee also recommends that the Strategic Working Group (SWG) and public health authorities oversee these efforts, ensuring that artemisinin‑based combination therapies mitigate the risk of SP resistance spread.",
+    "title": "Independent IPTi‑SP Audit and Rollout Recommendation"
+  },
+  "7": {
+    "summary_texts": [
+      "Study found intermittent preventive malaria treatment in infants increased post‑therapy malaria risk, causing a rebound effect after stopping therapy, suggesting continuous prophylaxis delays but does not prevent infection, raising concerns about IPTi’s net benefit.",
+      "The committee recommends that IPTi‑SP efficacy studies include a follow‑up period roughly equal to the drug’s active duration, typically 7.5 months after the last dose, to capture rebound effects while balancing detection of benefits and timing of infections."
+    ],
+    "relation_texts": [
+      "National Academy of Sciences copyright of Assessment of the Role of Intermittent Preventive Treatment for Malaria in Infants"
+    ],
+    "source_pages": [
+      11,
+      11,
+      18
+    ],
+    "source_chunk_ids": [
+      "bd1a400ed2f7bfc4e1054e66",
+      "bd1a400ed2f7bfc4e1054e66",
+      "aaa99da012fa02351bec5da0"
+    ],
+    "HL_summary": "Intermittent preventive treatment in infants (IPTi) with sulfadoxine‑pyrimethamine (SP) has been shown to reduce malaria during therapy but can trigger a rebound increase in infection once treatment stops, a phenomenon observed in a recent study. This rebound effect suggests that while continuous prophylaxis may delay disease onset, it does not ultimately prevent malaria and may even raise post‑therapy risk. Consequently, the committee advises that future IPTi‑SP efficacy trials incorporate a follow‑up period roughly equal to the drug’s active duration—about 7.5 months after the last dose—to adequately capture both the protective benefits and potential rebound. This approach balances the need to detect early gains against the risk of delayed infections, providing a more comprehensive assessment of IPTi’s net benefit.",
+    "title": "IPTi‑SP: Balancing Early Protection and Post‑Therapy Rebound\n\n"
+  },
+  "8": {
+    "summary_texts": [
+      "IOM reviewed six IPTi‑SP trials, confirming that intermittent preventive treatment with sulfadoxine‑pyrimethamine significantly reduces clinical malaria in infants in high‑ and moderate‑transmission areas, supporting continued investment and further evaluation of IPTi for infant malaria control."
+    ],
+    "relation_texts": [
+      "Bill and Melinda Gates Foundation funded IPTi Consortium",
+      "Institute of Medicine provides guidance to Bill and Melinda Gates Foundation",
+      "IPTi Consortium conducted studies in sub-Saharan Africa",
+      "IPTi Consortium involved with malaria research in Africa",
+      "IPTi Consortium involved with malaria research in Europe",
+      "IPTi Consortium involved with malaria research in United States"
+    ],
+    "source_pages": [
+      3,
+      3,
+      3,
+      3,
+      3,
+      3,
+      3
+    ],
+    "source_chunk_ids": [
+      "53e21648030d0c2057defbf8",
+      "53e21648030d0c2057defbf8",
+      "53e21648030d0c2057defbf8",
+      "53e21648030d0c2057defbf8",
+      "53e21648030d0c2057defbf8",
+      "53e21648030d0c2057defbf8",
+      "53e21648030d0c2057defbf8"
+    ],
+    "HL_summary": "The Institute of Medicine (IOM) evaluated six trials of intermittent preventive treatment in infants (IPTi) using sulfadoxine‑pyrimethamine (SP) and found that IPTi significantly lowers clinical malaria incidence in high‑ and moderate‑transmission settings. This evidence underpins the IOM’s recommendation for continued investment and further research into IPTi as a viable infant malaria control strategy. The Bill and Melinda Gates Foundation, through its IPTi Consortium, has funded and guided these studies, which span sub‑Saharan Africa, Europe, and the United States. The consortium’s work highlights the global relevance of IPTi research and supports the scaling of effective malaria prevention interventions for infants worldwide.",
+    "title": "IPTi with SP: Effective Infant Malaria Prevention Strategy"
+  },
+  "9": {
+    "summary_texts": [
+      "Continuous malaria chemoprophylaxis benefits children during use but may impair immunity, causing uncertain rebound risk after cessation; few rigorous trials exist, and studies conflict on whether post‑prophylaxis infection rates exceed placebo, especially in infants in high‑transmission areas."
+    ],
+    "relation_texts": [
+      "Greenwood defines chemoprophylaxis",
+      "White concludes benefits of chemoprophylaxis",
+      "IOM considered trials of chemoprophylaxis"
+    ],
+    "source_pages": [
+      10,
+      10,
+      10,
+      10
+    ],
+    "source_chunk_ids": [
+      "292d1c98faad96deacf97488",
+      "292d1c98faad96deacf97488",
+      "292d1c98faad96deacf97488",
+      "292d1c98faad96deacf97488"
+    ],
+    "HL_summary": "Continuous malaria chemoprophylaxis protects children while it is administered, yet it may blunt the development of natural immunity, raising concerns about a potential rebound of infection once treatment stops.  The evidence base is limited and inconsistent: few randomized trials have rigorously evaluated post‑prophylaxis outcomes, and results vary on whether infection rates after cessation exceed those seen in placebo groups, particularly among infants in high‑transmission settings.  Key references include Greenwood’s definition of chemoprophylaxis, White’s review of its benefits, and the Institute of Medicine’s assessment of existing trials, all underscoring the need for more definitive studies to clarify the long‑term risk–benefit profile of continuous prophylaxis.",
+    "title": "Continuous Malaria Chemoprophylaxis: Immunity and Rebound Risks"
+  }
+}

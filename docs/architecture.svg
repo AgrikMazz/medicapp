@@ -1,0 +1,143 @@
+<svg xmlns="http://www.w3.org/2000/svg" width="1500" height="1120" viewBox="0 0 1500 1120" role="img" aria-labelledby="title desc">
+  <title id="title">Long-PDF Graph RAG architecture</title>
+  <desc id="desc">Offline PDF extraction and graph indexing feed hybrid retrieval, graph propagation, pruning, and cited answer generation. Retrieval and generation can run separately, with generation replayed against the saved retrieval context.</desc>
+  <defs>
+    <marker id="arrow" markerWidth="10" markerHeight="10" refX="8" refY="5" orient="auto" markerUnits="strokeWidth"><path d="M0,0 L10,5 L0,10 z" fill="#52627a"/></marker>
+    <style>
+      text { font-family: Inter, Segoe UI, Arial, sans-serif; fill: #182437; }
+      .title { font-size: 31px; font-weight: 700; }
+      .subtitle { font-size: 15px; fill: #53647b; }
+      .lane-title { font-size: 18px; font-weight: 700; letter-spacing: 1px; }
+      .node-title { font-size: 16px; font-weight: 700; }
+      .node-copy { font-size: 13px; fill: #40516a; }
+      .small { font-size: 12px; fill: #51627a; }
+      .box { stroke-width: 1.5; rx: 14; }
+      .arrow { stroke: #52627a; stroke-width: 2.2; fill: none; marker-end: url(#arrow); }
+      .connector { stroke: #8290a4; stroke-width: 1.8; fill: none; }
+    </style>
+  </defs>
+  <rect width="1500" height="1120" fill="#f5f7fb"/>
+  <text x="55" y="48" class="title">Long-PDF Graph RAG</text>
+  <text x="55" y="76" class="subtitle">Page-grounded graph construction, hybrid retrieval, graph reranking, and cited generation</text>
+
+  <rect x="35" y="100" width="1430" height="410" rx="22" fill="#edf4ff" stroke="#c8d9f1"/>
+  <text x="60" y="135" class="lane-title" fill="#27549a">OFFLINE INDEX BUILD</text>
+  <text x="60" y="158" class="small">One PDF or a selected page slice; source page/character provenance is retained.</text>
+
+  <rect x="60" y="185" width="190" height="145" class="box" fill="#ffffff" stroke="#82a8db"/>
+  <text x="80" y="216" class="node-title">PDF source</text>
+  <text x="80" y="244" class="node-copy">medbook.pdf</text>
+  <text x="80" y="266" class="node-copy">81 pages total</text>
+  <text x="80" y="295" class="small">Demo: pages 3, 4, 10–13, 18</text>
+
+  <path d="M250 257 H280" class="arrow"/>
+  <rect x="290" y="185" width="190" height="145" class="box" fill="#ffffff" stroke="#82a8db"/>
+  <text x="310" y="216" class="node-title">Extract & chunk</text>
+  <text x="310" y="244" class="node-copy">PyMuPDF page text</text>
+  <text x="310" y="266" class="node-copy">Sentence-aware chunks</text>
+  <text x="310" y="288" class="small">~400 words; 40-word overlap</text>
+  <text x="310" y="309" class="small">Page + character offsets</text>
+
+  <path d="M480 257 H510" class="arrow"/>
+  <rect x="520" y="185" width="190" height="145" class="box" fill="#ffffff" stroke="#82a8db"/>
+  <text x="540" y="216" class="node-title">LLM annotation</text>
+  <text x="540" y="244" class="node-copy">Groq chat completions</text>
+  <text x="540" y="266" class="node-copy">Entities + relations</text>
+  <text x="540" y="288" class="node-copy">Chunk summaries</text>
+  <text x="540" y="309" class="small">Checkpoints and retries</text>
+
+  <path d="M710 257 H740" class="arrow"/>
+  <rect x="750" y="185" width="190" height="145" class="box" fill="#ffffff" stroke="#82a8db"/>
+  <text x="770" y="216" class="node-title">Typed graph</text>
+  <text x="770" y="244" class="node-copy">T: source passages</text>
+  <text x="770" y="266" class="node-copy">S: chunk summaries</text>
+  <text x="770" y="288" class="node-copy">N: entities · R: relations</text>
+  <text x="770" y="309" class="small">NetworkX multigraph</text>
+
+  <path d="M940 257 H970" class="arrow"/>
+  <rect x="980" y="185" width="190" height="145" class="box" fill="#ffffff" stroke="#82a8db"/>
+  <text x="1000" y="216" class="node-title">Community layer</text>
+  <text x="1000" y="244" class="node-copy">Leiden on S / N / R</text>
+  <text x="1000" y="266" class="node-copy">Groq theme summaries</text>
+  <text x="1000" y="288" class="node-copy">H: summary · O: title</text>
+  <text x="1000" y="309" class="small">Original T passages reattached</text>
+
+  <path d="M1170 257 H1200" class="arrow"/>
+  <rect x="1210" y="185" width="220" height="145" class="box" fill="#ffffff" stroke="#82a8db"/>
+  <text x="1230" y="216" class="node-title">Semantic index</text>
+  <text x="1230" y="244" class="node-copy">all-MiniLM-L12-v2 vectors</text>
+  <text x="1230" y="266" class="node-copy">HNSW + semantic edges</text>
+  <text x="1230" y="288" class="node-copy">Node mapping sidecar</text>
+  <text x="1230" y="309" class="small">Graph + index persisted locally</text>
+
+  <rect x="60" y="365" width="1370" height="105" rx="14" fill="#dceaff" stroke="#aac5e8"/>
+  <text x="85" y="398" class="node-title">Saved artifacts</text>
+  <text x="85" y="425" class="node-copy">chunked_output.jsonl · graph.pkl · graph-index.bin + .nodes.json · community_map.json · progress/checkpoint files</text>
+  <text x="85" y="449" class="small">Selected slice graph: 13 source passages / 219 nodes / 819 edges / 10 communities</text>
+  <text x="85" y="465" class="small">Full-book text index: 140 passages across pages 1-81; passage-only, without LLM enrichment</text>
+
+  <rect x="35" y="535" width="1430" height="340" rx="22" fill="#effaf5" stroke="#c4e6d5"/>
+  <text x="60" y="570" class="lane-title" fill="#236947">ONLINE QUESTION ANSWERING</text>
+
+  <rect x="60" y="610" width="150" height="155" class="box" fill="#ffffff" stroke="#79bb98"/>
+  <text x="80" y="643" class="node-title">Question</text>
+  <text x="80" y="673" class="node-copy">Natural language</text>
+  <text x="80" y="697" class="node-copy">question</text>
+  <text x="80" y="738" class="small">User query</text>
+
+  <path d="M210 687 H245" class="arrow"/>
+  <rect x="255" y="610" width="235" height="155" class="box" fill="#ffffff" stroke="#79bb98"/>
+  <text x="275" y="643" class="node-title">Hybrid candidates</text>
+  <text x="275" y="675" class="node-copy">Entity / title matches</text>
+  <text x="275" y="699" class="node-copy">Dense HNSW neighbors</text>
+  <text x="275" y="723" class="node-copy">Lexical passage ranking</text>
+  <text x="275" y="747" class="small">Union into graph entry nodes</text>
+
+  <path d="M490 687 H525" class="arrow"/>
+  <rect x="535" y="610" width="190" height="155" class="box" fill="#ffffff" stroke="#79bb98"/>
+  <text x="555" y="643" class="node-title">Graph propagation</text>
+  <text x="555" y="675" class="node-copy">Sparse personalized</text>
+  <text x="555" y="699" class="node-copy">PageRank from seeds</text>
+  <text x="555" y="739" class="small">Candidate subgraph</text>
+
+  <path d="M725 687 H760" class="arrow"/>
+  <rect x="770" y="610" width="195" height="155" class="box" fill="#ffffff" stroke="#79bb98"/>
+  <text x="790" y="643" class="node-title">Prune & rerank</text>
+  <text x="790" y="675" class="node-copy">Query similarity + PPR</text>
+  <text x="790" y="699" class="node-copy">Top seeds + neighbors</text>
+  <text x="790" y="739" class="small">Final evidence subgraph</text>
+
+  <path d="M965 687 H1000" class="arrow"/>
+  <rect x="1010" y="610" width="190" height="155" class="box" fill="#ffffff" stroke="#79bb98"/>
+  <text x="1030" y="643" class="node-title">Build context</text>
+  <text x="1030" y="675" class="node-copy">Prioritize original T text</text>
+  <text x="1030" y="699" class="node-copy">Attach source page labels</text>
+  <text x="1030" y="739" class="small">Up to configured char limit</text>
+
+  <path d="M1200 687 H1235" class="arrow"/>
+  <rect x="1245" y="610" width="185" height="155" class="box" fill="#ffffff" stroke="#79bb98"/>
+  <text x="1265" y="643" class="node-title">Generate answer</text>
+  <text x="1265" y="675" class="node-copy">Groq gpt-oss-20b</text>
+  <text x="1265" y="699" class="node-copy">Cite supporting pages</text>
+  <text x="1265" y="723" class="node-copy">Abstain if unsupported</text>
+  <text x="1265" y="747" class="small">Concise response</text>
+
+  <text x="60" y="830" class="small">Retrieval combines symbolic, lexical, semantic, and graph signals; summaries are navigation aids and source passages support factual claims.</text>
+
+  <rect x="35" y="900" width="1430" height="185" rx="22" fill="#fff8eb" stroke="#f0d9a9"/>
+  <text x="60" y="935" class="lane-title" fill="#8a5a13">EVALUATION (RETRIEVAL + CONTEXT REPLAY)</text>
+  <rect x="60" y="958" width="430" height="92" rx="13" fill="#ffffff" stroke="#e2bd78"/>
+  <text x="80" y="987" class="node-title">Retrieval metrics</text>
+  <text x="80" y="1015" class="node-copy">Evidence-page recall before and after pruning</text>
+  <text x="80" y="1037" class="small">Current run uses page annotations, not exact spans</text>
+
+  <rect x="535" y="958" width="430" height="92" rx="13" fill="#ffffff" stroke="#e2bd78"/>
+  <text x="555" y="987" class="node-title">Answer metrics</text>
+  <text x="555" y="1015" class="node-copy">Reference string overlap, citations, abstention</text>
+  <text x="555" y="1037" class="small">Generation reuses the saved final retrieval context</text>
+
+  <rect x="1010" y="958" width="420" height="92" rx="13" fill="#fff1d6" stroke="#e2bd78"/>
+  <text x="1030" y="987" class="node-title">Optional diagnostic</text>
+  <text x="1030" y="1015" class="node-copy">Gold-context generation can estimate an upper bound</text>
+  <text x="1030" y="1037" class="small">Primary result remains generation from retrieved evidence</text>
+</svg>

@@ -1,0 +1,254 @@
+{
+    "question_file_sha256":  "0dc8a933203e8f16907ca606120f583b07d2f5ca9602c669cc1fa6866c83398d",
+    "source_sha256":  "dddce66d3163b238c1a0ed8089e62c783e355e225252bf4d902231a336893f91",
+    "selected_config":  {
+                            "selected_method":  "hnsw_ppr_crossencoder_40",
+                            "rrf_k":  60,
+                            "hnsw_candidate_k":  20,
+                            "hnsw_expand_k":  20,
+                            "hnsw_ppr_alpha":  0.5,
+                            "cross_encoder_candidate_k":  40
+                        },
+    "selected_dev_summary":  {
+                                 "ndcg@10":  0.8628473751868905,
+                                 "mrr":  0.8490990990990991,
+                                 "evidence_span_recall@10":  0.972972972972973,
+                                 "complete_evidence@10":  0.9459459459459459
+                             },
+    "bm25_dev_summary":  {
+                             "ndcg@10":  0.8094136700356485,
+                             "mrr":  0.7967824967824968,
+                             "evidence_span_recall@10":  0.9324324324324325,
+                             "complete_evidence@10":  0.8918918918918919
+                         },
+    "grid_trials":  19,
+    "top_10_configs":  [
+                           {
+                               "config":  {
+                                              "selected_method":  "hnsw_ppr_crossencoder_40",
+                                              "rrf_k":  60,
+                                              "hnsw_candidate_k":  20,
+                                              "hnsw_expand_k":  20,
+                                              "hnsw_ppr_alpha":  0.5,
+                                              "cross_encoder_candidate_k":  40
+                                          },
+                               "method":  "hnsw_ppr_crossencoder_40",
+                               "summary":  {
+                                               "ndcg@10":  0.8628473751868905,
+                                               "mrr":  0.8490990990990991,
+                                               "evidence_span_recall@10":  0.972972972972973,
+                                               "complete_evidence@10":  0.9459459459459459
+                                           },
+                               "objective":  [
+                                                 0.8628473751868905,
+                                                 0.8490990990990991,
+                                                 0.972972972972973,
+                                                 0.9459459459459459
+                                             ]
+                           },
+                           {
+                               "config":  {
+                                              "selected_method":  "hnsw_ppr_crossencoder_40",
+                                              "rrf_k":  60,
+                                              "hnsw_candidate_k":  40,
+                                              "hnsw_expand_k":  10,
+                                              "hnsw_ppr_alpha":  0.5,
+                                              "cross_encoder_candidate_k":  40
+                                          },
+                               "method":  "hnsw_ppr_crossencoder_40",
+                               "summary":  {
+                                               "ndcg@10":  0.8500823326051515,
+                                               "mrr":  0.8457207207207208,
+                                               "evidence_span_recall@10":  0.9459459459459459,
+                                               "complete_evidence@10":  0.8918918918918919
+                                           },
+                               "objective":  [
+                                                 0.8500823326051515,
+                                                 0.8457207207207208,
+                                                 0.9459459459459459,
+                                                 0.8918918918918919
+                                             ]
+                           },
+                           {
+                               "config":  {
+                                              "selected_method":  "hnsw_ppr_crossencoder_40",
+                                              "rrf_k":  60,
+                                              "hnsw_candidate_k":  40,
+                                              "hnsw_expand_k":  40,
+                                              "hnsw_ppr_alpha":  0.5,
+                                              "cross_encoder_candidate_k":  40
+                                          },
+                               "method":  "hnsw_ppr_crossencoder_40",
+                               "summary":  {
+                                               "ndcg@10":  0.8497915102874596,
+                                               "mrr":  0.8398970398970399,
+                                               "evidence_span_recall@10":  0.9594594594594594,
+                                               "complete_evidence@10":  0.918918918918919
+                                           },
+                               "objective":  [
+                                                 0.8497915102874596,
+                                                 0.8398970398970399,
+                                                 0.9594594594594594,
+                                                 0.918918918918919
+                                             ]
+                           },
+                           {
+                               "config":  {
+                                              "selected_method":  "hnsw_ppr_crossencoder_40",
+                                              "rrf_k":  60,
+                                              "hnsw_candidate_k":  10,
+                                              "hnsw_expand_k":  20,
+                                              "hnsw_ppr_alpha":  0.5,
+                                              "cross_encoder_candidate_k":  40
+                                          },
+                               "method":  "hnsw_ppr_crossencoder_40",
+                               "summary":  {
+                                               "ndcg@10":  0.8488979069068042,
+                                               "mrr":  0.8443693693693693,
+                                               "evidence_span_recall@10":  0.9459459459459459,
+                                               "complete_evidence@10":  0.8918918918918919
+                                           },
+                               "objective":  [
+                                                 0.8488979069068042,
+                                                 0.8443693693693693,
+                                                 0.9459459459459459,
+                                                 0.8918918918918919
+                                             ]
+                           },
+                           {
+                               "config":  {
+                                              "selected_method":  "hnsw_ppr_crossencoder_40",
+                                              "rrf_k":  60,
+                                              "hnsw_candidate_k":  40,
+                                              "hnsw_expand_k":  20,
+                                              "hnsw_ppr_alpha":  0.5,
+                                              "cross_encoder_candidate_k":  40
+                                          },
+                               "method":  "hnsw_ppr_crossencoder_40",
+                               "summary":  {
+                                               "ndcg@10":  0.8488979069068042,
+                                               "mrr":  0.8443693693693693,
+                                               "evidence_span_recall@10":  0.9459459459459459,
+                                               "complete_evidence@10":  0.8918918918918919
+                                           },
+                               "objective":  [
+                                                 0.8488979069068042,
+                                                 0.8443693693693693,
+                                                 0.9459459459459459,
+                                                 0.8918918918918919
+                                             ]
+                           },
+                           {
+                               "config":  {
+                                              "selected_method":  "hnsw_ppr_crossencoder_40",
+                                              "rrf_k":  60,
+                                              "hnsw_candidate_k":  10,
+                                              "hnsw_expand_k":  40,
+                                              "hnsw_ppr_alpha":  0.5,
+                                              "cross_encoder_candidate_k":  40
+                                          },
+                               "method":  "hnsw_ppr_crossencoder_40",
+                               "summary":  {
+                                               "ndcg@10":  0.847474272915546,
+                                               "mrr":  0.8426426426426427,
+                                               "evidence_span_recall@10":  0.9459459459459459,
+                                               "complete_evidence@10":  0.8918918918918919
+                                           },
+                               "objective":  [
+                                                 0.847474272915546,
+                                                 0.8426426426426427,
+                                                 0.9459459459459459,
+                                                 0.8918918918918919
+                                             ]
+                           },
+                           {
+                               "config":  {
+                                              "selected_method":  "hnsw_ppr_crossencoder_40",
+                                              "rrf_k":  60,
+                                              "hnsw_candidate_k":  20,
+                                              "hnsw_expand_k":  40,
+                                              "hnsw_ppr_alpha":  0.5,
+                                              "cross_encoder_candidate_k":  40
+                                          },
+                               "method":  "hnsw_ppr_crossencoder_40",
+                               "summary":  {
+                                               "ndcg@10":  0.847474272915546,
+                                               "mrr":  0.8426426426426427,
+                                               "evidence_span_recall@10":  0.9459459459459459,
+                                               "complete_evidence@10":  0.8918918918918919
+                                           },
+                               "objective":  [
+                                                 0.847474272915546,
+                                                 0.8426426426426427,
+                                                 0.9459459459459459,
+                                                 0.8918918918918919
+                                             ]
+                           },
+                           {
+                               "config":  {
+                                              "selected_method":  "hybrid_crossencoder_40",
+                                              "rrf_k":  60,
+                                              "cross_encoder_candidate_k":  40
+                                          },
+                               "method":  "hybrid_crossencoder_40",
+                               "summary":  {
+                                               "ndcg@10":  0.8450012592932961,
+                                               "mrr":  0.8398970398970399,
+                                               "evidence_span_recall@10":  0.9459459459459459,
+                                               "complete_evidence@10":  0.8918918918918919
+                                           },
+                               "objective":  [
+                                                 0.8450012592932961,
+                                                 0.8398970398970399,
+                                                 0.9459459459459459,
+                                                 0.8918918918918919
+                                             ]
+                           },
+                           {
+                               "config":  {
+                                              "selected_method":  "hybrid_crossencoder_60",
+                                              "rrf_k":  60,
+                                              "cross_encoder_candidate_k":  60
+                                          },
+                               "method":  "hybrid_crossencoder_60",
+                               "summary":  {
+                                               "ndcg@10":  0.8443830470291153,
+                                               "mrr":  0.8392535392535393,
+                                               "evidence_span_recall@10":  0.9459459459459459,
+                                               "complete_evidence@10":  0.8918918918918919
+                                           },
+                               "objective":  [
+                                                 0.8443830470291153,
+                                                 0.8392535392535393,
+                                                 0.9459459459459459,
+                                                 0.8918918918918919
+                                             ]
+                           },
+                           {
+                               "config":  {
+                                              "selected_method":  "graph_crossencoder_40",
+                                              "rrf_k":  60,
+                                              "graph_seed_k":  20,
+                                              "graph_expand_k":  10,
+                                              "ppr_alpha":  0.35,
+                                              "ppr_max_iter":  20,
+                                              "cross_encoder_candidate_k":  40
+                                          },
+                               "method":  "graph_crossencoder_40",
+                               "summary":  {
+                                               "ndcg@10":  0.8413590700858015,
+                                               "mrr":  0.8450450450450451,
+                                               "evidence_span_recall@10":  0.9459459459459459,
+                                               "complete_evidence@10":  0.8918918918918919
+                                           },
+                               "objective":  [
+                                                 0.8413590700858015,
+                                                 0.8450450450450451,
+                                                 0.9459459459459459,
+                                                 0.8918918918918919
+                                             ]
+                           }
+                       ],
+    "graph_sha256":  "f0b9ed825613400d8202b6b6a14031983ce2ca612d638c91bcd978aa826d8230",
+    "hnsw_index_sha256":  "7e02ab8887d3c3e0a3cc6f9eab963a03ac8fa2c19293ae99b9508ea4e513d291"
+}

@@ -1,0 +1,21 @@
+# Local credentials; keep the shareable template
+.env
+!.env.example
+
+# Local Python environments, including nested environments
+**/.venv/
+
+# Python bytecode
+**/__pycache__/
+*.py[cod]
+
+# Local app output and tool caches
+/temp.pdf
+data/longbench/hnsw/
+.pytest_cache/
+.mypy_cache/
+.ruff_cache/
+
+# OS metadata
+.DS_Store
+Thumbs.db

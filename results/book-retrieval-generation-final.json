@@ -1,0 +1,1880 @@
+{
+  "run_metadata": {
+    "mode": "generation_on_frozen_retrieved_contexts",
+    "retrieval_path": "results\\book-retrieval-final.json",
+    "retrieval_sha256": "9f5aad601798b7dc37470b39e7a40c75762adbcb60bb1d2d261ff5038c9a04eb",
+    "question_path": "data\\book-graph\\eval_questions.reviewed.jsonl",
+    "question_sha256": "0dc8a933203e8f16907ca606120f583b07d2f5ca9602c669cc1fa6866c83398d",
+    "method": "hnsw_ppr_crossencoder_40",
+    "question_count": 23,
+    "retrieval_recomputed": false,
+    "graph_rebuilt": false,
+    "api_calls": 23,
+    "api_token_usage": {
+      "prompt_tokens": 97283,
+      "completion_tokens": 3938,
+      "total_tokens": 101221
+    },
+    "llm_runtime": {
+      "configured_models": [
+        "openai/gpt-oss-120b",
+        "openai/gpt-oss-20b",
+        "qwen/qwen3.8-27b",
+        "openai/gpt-oss-120b",
+        "openai/gpt-oss-20b",
+        "qwen/qwen3.8-27b"
+      ],
+      "configured_key_slots": [
+        "GROQ_API_KEY",
+        "GROQ_API_KEY_2"
+      ],
+      "last_successful_model": "openai/gpt-oss-20b",
+      "last_successful_key_slot": "GROQ_API_KEY_2",
+      "fallback_events": [
+        {
+          "key_slot": "GROQ_API_KEY",
+          "model": "openai/gpt-oss-120b",
+          "http_status": 429,
+          "error_type": "RateLimited"
+        },
+        {
+          "key_slot": "GROQ_API_KEY",
+          "model": "openai/gpt-oss-20b",
+          "http_status": 429,
+          "error_type": "RateLimited"
+        },
+        {
+          "key_slot": "GROQ_API_KEY",
+          "model": "qwen/qwen3.8-27b",
+          "http_status": 429,
+          "error_type": "RateLimited"
+        },
+        {
+          "key_slot": "GROQ_API_KEY_2",
+          "model": "openai/gpt-oss-120b",
+          "http_status": 429,
+          "error_type": "RateLimited"
+        },
+        {
+          "key_slot": "GROQ_API_KEY_2",
+          "model": "openai/gpt-oss-20b",
+          "http_status": 429,
+          "error_type": "RateLimited"
+        },
+        {
+          "key_slot": "GROQ_API_KEY_2",
+          "model": "qwen/qwen3.8-27b",
+          "http_status": 429,
+          "error_type": "RateLimited"
+        },
+        {
+          "key_slot": "GROQ_API_KEY",
+          "model": "openai/gpt-oss-120b",
+          "http_status": 429,
+          "error_type": "RateLimited"
+        },
+        {
+          "key_slot": "GROQ_API_KEY",
+          "model": "openai/gpt-oss-20b",
+          "http_status": 429,
+          "error_type": "RateLimited"
+        },
+        {
+          "key_slot": "GROQ_API_KEY",
+          "model": "qwen/qwen3.8-27b",
+          "http_status": 429,
+          "error_type": "RateLimited"
+        },
+        {
+          "key_slot": "GROQ_API_KEY_2",
+          "model": "openai/gpt-oss-120b",
+          "http_status": 429,
+          "error_type": "RateLimited"
+        },
+        {
+          "key_slot": "GROQ_API_KEY_2",
+          "model": "openai/gpt-oss-20b",
+          "http_status": 429,
+          "error_type": "RateLimited"
+        },
+        {
+          "key_slot": "GROQ_API_KEY_2",
+          "model": "qwen/qwen3.8-27b",
+          "http_status": 429,
+          "error_type": "RateLimited"
+        },
+        {
+          "key_slot": "GROQ_API_KEY",
+          "model": "openai/gpt-oss-120b",
+          "http_status": 429,
+          "error_type": "RateLimited"
+        },
+        {
+          "key_slot": "GROQ_API_KEY",
+          "model": "openai/gpt-oss-20b",
+          "http_status": 429,
+          "error_type": "RateLimited"
+        },
+        {
+          "key_slot": "GROQ_API_KEY",
+          "model": "qwen/qwen3.8-27b",
+          "http_status": 429,
+          "error_type": "RateLimited"
+        },
+        {
+          "key_slot": "GROQ_API_KEY_2",
+          "model": "openai/gpt-oss-120b",
+          "http_status": 429,
+          "error_type": "RateLimited"
+        },
+        {
+          "key_slot": "GROQ_API_KEY_2",
+          "model": "openai/gpt-oss-20b",
+          "http_status": 429,
+          "error_type": "RateLimited"
+        },
+        {
+          "key_slot": "GROQ_API_KEY_2",
+          "model": "qwen/qwen3.8-27b",
+          "http_status": 429,
+          "error_type": "RateLimited"
+        },
+        {
+          "key_slot": "GROQ_API_KEY",
+          "model": "openai/gpt-oss-120b",
+          "http_status": 429,
+          "error_type": "RateLimited"
+        },
+        {
+          "key_slot": "GROQ_API_KEY",
+          "model": "openai/gpt-oss-20b",
+          "http_status": 429,
+          "error_type": "RateLimited"
+        },
+        {
+          "key_slot": "GROQ_API_KEY",
+          "model": "qwen/qwen3.8-27b",
+          "http_status": 429,
+          "error_type": "RateLimited"
+        },
+        {
+          "key_slot": "GROQ_API_KEY_2",
+          "model": "openai/gpt-oss-120b",
+          "http_status": 429,
+          "error_type": "RateLimited"
+        }
+      ],
+      "usage_by_model": {
+        "openai/gpt-oss-120b": {
+          "requests": 8,
+          "prompt_tokens": 33129,
+          "completion_tokens": 1371,
+          "total_tokens": 34500
+        },
+        "openai/gpt-oss-20b": {
+          "requests": 8,
+          "prompt_tokens": 33903,
+          "completion_tokens": 1340,
+          "total_tokens": 35243
+        },
+        "qwen/qwen3.8-27b": {
+          "requests": 7,
+          "prompt_tokens": 30251,
+          "completion_tokens": 1227,
+          "total_tokens": 31478
+        }
+      }
+    },
+    "generation_limitations": "Lexical answer scores and source-ID citation agreement are diagnostics; no human or claim-level faithfulness judge was run."
+  },
+  "summary": {
+    "token_f1": 0.25957941281207864,
+    "exact_match": 0.0,
+    "rouge_l": 0.2251398920291306,
+    "citation_present": 1.0,
+    "context_citation_precision": 1.0,
+    "gold_evidence_citation_precision": 0.7239130434782608,
+    "gold_evidence_citation_recall": 0.9565217391304348,
+    "answers_generated": 23,
+    "questions_with_any_citation": 23.0
+  },
+  "questions": [
+    {
+      "id": "cur-test-001",
+      "question": "Why are patients with delusions of suspicion treated as potentially dangerous?",
+      "category": "single_fact",
+      "answer": "Patients with delusions of suspicion are treated as potentially dangerous because their delusions fully control them, leading to intense mistrust, hostility and a readiness to act violently toward attendants, physicians, or anyone they perceive as part of a conspiracy. Their “fancied wrongs” can provoke morose, irritable, and even homicidal behavior, and they may fear bodily harm, torture or death, prompting defensive or aggressive attacks. Thus they are classed with those inclined to commit acts of violence and require special, watchful care【source=4f1cdc732e81c85ce2c1b4a1】.",
+      "references": [
+        "Their delusions may fully control them and make them dangerous and difficult to manage."
+      ],
+      "answer_metrics": {
+        "token_f1": 0.21505376344086025,
+        "exact_match": 0.0,
+        "rouge_l": 0.17204301075268819
+      },
+      "citation_metrics": {
+        "citation_count": 1,
+        "citation_present": 1.0,
+        "context_citation_precision": 1.0,
+        "gold_evidence_citation_precision": 1.0,
+        "gold_evidence_citation_recall": 1.0,
+        "cited_source_ids": [
+          "4f1cdc732e81c85ce2c1b4a1"
+        ],
+        "context_source_ids": [
+          "4f1cdc732e81c85ce2c1b4a1",
+          "90dafbcda6257a23122cf6f9",
+          "aa5ea06d0d518b07f7d2a298",
+          "b01522eb635d715a82f81844",
+          "c1d1e021dd0058cfca2629c0",
+          "de6cf88c6bc142065552f76c",
+          "ea7f0eeec461c1b86ee92980",
+          "ed9f699a4295ec95a6d1bbe8"
+        ],
+        "gold_evidence_source_ids": [
+          "4f1cdc732e81c85ce2c1b4a1"
+        ]
+      },
+      "retrieved_passage_ids": [
+        "T_4f1cdc732e81c85ce2c1b4a1",
+        "T_de6cf88c6bc142065552f76c",
+        "T_c1d1e021dd0058cfca2629c0",
+        "T_b01522eb635d715a82f81844",
+        "T_90dafbcda6257a23122cf6f9",
+        "T_aa5ea06d0d518b07f7d2a298",
+        "T_ea7f0eeec461c1b86ee92980",
+        "T_ed9f699a4295ec95a6d1bbe8",
+        "T_4942ca8fcf6fe3b28251aa25",
+        "T_8b9875a875af0a45f4900e76",
+        "T_6c3ed0f0583234686a14c3c6",
+        "T_fffa1fccdca51c2d85fe434b",
+        "T_a4e97d003189ecae22d1a13e",
+        "T_841ab48a4376eb5cdca11e56",
+        "T_fcdc737f469036001961ae70",
+        "T_ebae2ccb8e8d109c3ac92f0d",
+        "T_b3c9cfc2b9ff50d13ffa1aa6",
+        "T_8d61fe72e8e28762a26614a4",
+        "T_b84703f28b479db32fb1b600",
+        "T_27693d463ceddb7dda2c2f08"
+      ],
+      "packed_passage_ids": [
+        "T_4f1cdc732e81c85ce2c1b4a1",
+        "T_de6cf88c6bc142065552f76c",
+        "T_c1d1e021dd0058cfca2629c0",
+        "T_b01522eb635d715a82f81844",
+        "T_90dafbcda6257a23122cf6f9",
+        "T_aa5ea06d0d518b07f7d2a298",
+        "T_ea7f0eeec461c1b86ee92980",
+        "T_ed9f699a4295ec95a6d1bbe8"
+      ],
+      "packed_context_tokens": 3881,
+      "retrieval_evidence_span_recall@10": 1.0,
+      "retrieval_packed_context_span_recall": 1.0
+    },
+    {
+      "id": "cur-test-002",
+      "question": "What kinds of fears may patients with suspicions of bodily harm express?",
+      "category": "single_fact",
+      "answer": "Patients with suspicions of bodily harm may fear that they will be **tortured, burned alive, or killed** by others. They may worry that the **night‑watch is armed with a knife** and will kill them, or that ordinary pains or discomforts are signs of **poisoning, being shot, stabbed, or pounded**. Some may think they have been **violated or are pregnant**, or that **electricity or mesmerism** is being used against them. These fears arise from delusions and are described in the passages above. [source=de6cf88c6bc142065552f76c]",
+      "references": [
+        "They may believe they will be tortured, burned alive, or killed."
+      ],
+      "answer_metrics": {
+        "token_f1": 0.22471910112359544,
+        "exact_match": 0.0,
+        "rouge_l": 0.20224719101123595
+      },
+      "citation_metrics": {
+        "citation_count": 1,
+        "citation_present": 1.0,
+        "context_citation_precision": 1.0,
+        "gold_evidence_citation_precision": 1.0,
+        "gold_evidence_citation_recall": 1.0,
+        "cited_source_ids": [
+          "de6cf88c6bc142065552f76c"
+        ],
+        "context_source_ids": [
+          "1ad70ede2f937b917043b2d5",
+          "1d2a16cadb62219f94d7c089",
+          "4f1cdc732e81c85ce2c1b4a1",
+          "6c3ed0f0583234686a14c3c6",
+          "b01522eb635d715a82f81844",
+          "c1d1e021dd0058cfca2629c0",
+          "de6cf88c6bc142065552f76c",
+          "ea7f0eeec461c1b86ee92980"
+        ],
+        "gold_evidence_source_ids": [
+          "de6cf88c6bc142065552f76c"
+        ]
+      },
+      "retrieved_passage_ids": [
+        "T_de6cf88c6bc142065552f76c",
+        "T_4f1cdc732e81c85ce2c1b4a1",
+        "T_c1d1e021dd0058cfca2629c0",
+        "T_b01522eb635d715a82f81844",
+        "T_6c3ed0f0583234686a14c3c6",
+        "T_ea7f0eeec461c1b86ee92980",
+        "T_1d2a16cadb62219f94d7c089",
+        "T_1ad70ede2f937b917043b2d5",
+        "T_fcdc737f469036001961ae70",
+        "T_430fd1a2ade40c791d810561",
+        "T_a5051e3476bd1977ac65243c",
+        "T_c5314a8b44fa0e4a3c4dc546",
+        "T_aa5ea06d0d518b07f7d2a298",
+        "T_d97a4f11435077577d252505",
+        "T_ebae2ccb8e8d109c3ac92f0d",
+        "T_8d61fe72e8e28762a26614a4",
+        "T_4b9c32248a472526b5b814e7",
+        "T_7723d3fc6525a4372527c8bf",
+        "T_1cf2799c8afa279aef5130f2",
+        "T_51973bc38596736396d738c9"
+      ],
+      "packed_passage_ids": [
+        "T_de6cf88c6bc142065552f76c",
+        "T_4f1cdc732e81c85ce2c1b4a1",
+        "T_c1d1e021dd0058cfca2629c0",
+        "T_b01522eb635d715a82f81844",
+        "T_6c3ed0f0583234686a14c3c6",
+        "T_ea7f0eeec461c1b86ee92980",
+        "T_1d2a16cadb62219f94d7c089",
+        "T_1ad70ede2f937b917043b2d5"
+      ],
+      "packed_context_tokens": 3922,
+      "retrieval_evidence_span_recall@10": 1.0,
+      "retrieval_packed_context_span_recall": 1.0
+    },
+    {
+      "id": "cur-test-003",
+      "question": "What motive may lead a patient to become homicidal, according to the manual?",
+      "category": "single_fact",
+      "answer": "According to the manual, patients may become homicidal due to several motives:\n1.  **Self-protection:** A desire to protect themselves from supposed assaults, believing an approaching person intends to kill or torture them [source=b01522eb635d715a82f81844].\n2.  **Persecution and Suspicion:** Ideas of persecution and suspicion, such as delusions of conspiracy or bodily harm [source=de6cf88c6bc142065552f76c].\n3.  **Command Hallucinations:** Hearing voices (e.g., God’s voice) commanding them to commit the act, such as sacrificing children [source=b01522eb635d715a82f81844].\n4.  **Grandiosity:** Believing themselves to be God, a king, or a ruler, and thus having a right to take life [source=b01522eb635d715a82f81844].\n5.  **Frenzy:** Violence and frenzy without a settled plan, fixed delusion, or intense suspicion, often resulting from acute mania or escape attempts [source=de6cf88c6bc142065552f76c].",
+      "references": [
+        "A desire to protect themselves from supposed assaults."
+      ],
+      "answer_metrics": {
+        "token_f1": 0.12962962962962962,
+        "exact_match": 0.0,
+        "rouge_l": 0.12962962962962962
+      },
+      "citation_metrics": {
+        "citation_count": 5,
+        "citation_present": 1.0,
+        "context_citation_precision": 1.0,
+        "gold_evidence_citation_precision": 0.2,
+        "gold_evidence_citation_recall": 1.0,
+        "cited_source_ids": [
+          "b01522eb635d715a82f81844",
+          "de6cf88c6bc142065552f76c",
+          "b01522eb635d715a82f81844",
+          "b01522eb635d715a82f81844",
+          "de6cf88c6bc142065552f76c"
+        ],
+        "context_source_ids": [
+          "1d2a16cadb62219f94d7c089",
+          "2a0b2bd73d2cce532a2b6011",
+          "3119af000d330c99ef0418b1",
+          "430fd1a2ade40c791d810561",
+          "4f1cdc732e81c85ce2c1b4a1",
+          "b01522eb635d715a82f81844",
+          "de6cf88c6bc142065552f76c",
+          "ea7f0eeec461c1b86ee92980"
+        ],
+        "gold_evidence_source_ids": [
+          "b01522eb635d715a82f81844"
+        ]
+      },
+      "retrieved_passage_ids": [
+        "T_b01522eb635d715a82f81844",
+        "T_de6cf88c6bc142065552f76c",
+        "T_4f1cdc732e81c85ce2c1b4a1",
+        "T_1d2a16cadb62219f94d7c089",
+        "T_2a0b2bd73d2cce532a2b6011",
+        "T_ea7f0eeec461c1b86ee92980",
+        "T_3119af000d330c99ef0418b1",
+        "T_430fd1a2ade40c791d810561",
+        "T_c1d1e021dd0058cfca2629c0",
+        "T_a5051e3476bd1977ac65243c",
+        "T_a4e97d003189ecae22d1a13e",
+        "T_aa5ea06d0d518b07f7d2a298",
+        "T_c5314a8b44fa0e4a3c4dc546",
+        "T_fffa1fccdca51c2d85fe434b",
+        "T_56db02f105bee70b225ea860",
+        "T_fcdc737f469036001961ae70",
+        "T_ebae2ccb8e8d109c3ac92f0d",
+        "T_8d61fe72e8e28762a26614a4",
+        "T_d97a4f11435077577d252505",
+        "T_9dc68727c2b4c2f06dcb8b41"
+      ],
+      "packed_passage_ids": [
+        "T_b01522eb635d715a82f81844",
+        "T_de6cf88c6bc142065552f76c",
+        "T_4f1cdc732e81c85ce2c1b4a1",
+        "T_1d2a16cadb62219f94d7c089",
+        "T_2a0b2bd73d2cce532a2b6011",
+        "T_ea7f0eeec461c1b86ee92980",
+        "T_3119af000d330c99ef0418b1",
+        "T_430fd1a2ade40c791d810561"
+      ],
+      "packed_context_tokens": 3835,
+      "retrieval_evidence_span_recall@10": 1.0,
+      "retrieval_packed_context_span_recall": 1.0
+    },
+    {
+      "id": "cur-test-004",
+      "question": "What level of observation does the manual prescribe for suicidal patients?",
+      "category": "single_fact",
+      "answer": "The manual requires that suicidal patients be placed under **constant supervision** – watched continuously day and night, kept under observation and only put to bed at a convenient time while still being supervised【source=aa5ea06d0d518b07f7d2a298】. This “constant watchfulness” is the prescribed level of observation for them【source=ea7f0eeec461c1b86ee92980】.",
+      "references": [
+        "Constant watchfulness day and night."
+      ],
+      "answer_metrics": {
+        "token_f1": 0.1739130434782609,
+        "exact_match": 0.0,
+        "rouge_l": 0.1739130434782609
+      },
+      "citation_metrics": {
+        "citation_count": 2,
+        "citation_present": 1.0,
+        "context_citation_precision": 1.0,
+        "gold_evidence_citation_precision": 0.5,
+        "gold_evidence_citation_recall": 1.0,
+        "cited_source_ids": [
+          "aa5ea06d0d518b07f7d2a298",
+          "ea7f0eeec461c1b86ee92980"
+        ],
+        "context_source_ids": [
+          "2a0b2bd73d2cce532a2b6011",
+          "4b9c32248a472526b5b814e7",
+          "4f1cdc732e81c85ce2c1b4a1",
+          "aa5ea06d0d518b07f7d2a298",
+          "b01522eb635d715a82f81844",
+          "c9f99a16007e8863e46599f3",
+          "ea7f0eeec461c1b86ee92980"
+        ],
+        "gold_evidence_source_ids": [
+          "ea7f0eeec461c1b86ee92980"
+        ]
+      },
+      "retrieved_passage_ids": [
+        "T_ea7f0eeec461c1b86ee92980",
+        "T_4f1cdc732e81c85ce2c1b4a1",
+        "T_aa5ea06d0d518b07f7d2a298",
+        "T_b01522eb635d715a82f81844",
+        "T_2a0b2bd73d2cce532a2b6011",
+        "T_c9f99a16007e8863e46599f3",
+        "T_4b9c32248a472526b5b814e7",
+        "T_fcdc737f469036001961ae70",
+        "T_2a9ba1c46e339b96b3825d82",
+        "T_c1d1e021dd0058cfca2629c0",
+        "T_de6cf88c6bc142065552f76c",
+        "T_1d2a16cadb62219f94d7c089",
+        "T_3119af000d330c99ef0418b1",
+        "T_c5314a8b44fa0e4a3c4dc546",
+        "T_6c3ed0f0583234686a14c3c6",
+        "T_7723d3fc6525a4372527c8bf",
+        "T_8d61fe72e8e28762a26614a4",
+        "T_27693d463ceddb7dda2c2f08",
+        "T_491e2f394aeb2f021bf013ff",
+        "T_bac74dfe3c3b99da2192dedb"
+      ],
+      "packed_passage_ids": [
+        "T_ea7f0eeec461c1b86ee92980",
+        "T_4f1cdc732e81c85ce2c1b4a1",
+        "T_aa5ea06d0d518b07f7d2a298",
+        "T_b01522eb635d715a82f81844",
+        "T_2a0b2bd73d2cce532a2b6011",
+        "T_c9f99a16007e8863e46599f3",
+        "T_4b9c32248a472526b5b814e7"
+      ],
+      "packed_context_tokens": 3696,
+      "retrieval_evidence_span_recall@10": 1.0,
+      "retrieval_packed_context_span_recall": 1.0
+    },
+    {
+      "id": "cur-test-005",
+      "question": "What does the manual say may motivate patients to set fires?",
+      "category": "single_fact",
+      "answer": "The manual says patients may set fires when they are driven by:\n\n- delusions or hallucinations that compel them to commit incendiary acts  \n- suspicions and feelings of having been wronged, which they try to “repay” or take revenge for  \n- a feeble mind that thinks a fire is a “pretty sight” to see burn  \n\nThese motives are listed in the passage on patients with tendencies to setting things on fire. [source=c1d1e021dd0058cfca2629c0]",
+      "references": [
+        "Delusions or hallucinations, along with suspicions and feelings of being treated wrongly."
+      ],
+      "answer_metrics": {
+        "token_f1": 0.21333333333333335,
+        "exact_match": 0.0,
+        "rouge_l": 0.18666666666666668
+      },
+      "citation_metrics": {
+        "citation_count": 1,
+        "citation_present": 1.0,
+        "context_citation_precision": 1.0,
+        "gold_evidence_citation_precision": 1.0,
+        "gold_evidence_citation_recall": 1.0,
+        "cited_source_ids": [
+          "c1d1e021dd0058cfca2629c0"
+        ],
+        "context_source_ids": [
+          "1d2a16cadb62219f94d7c089",
+          "24c282ac8482c163bd62e52b",
+          "430fd1a2ade40c791d810561",
+          "b01522eb635d715a82f81844",
+          "c1d1e021dd0058cfca2629c0",
+          "c5314a8b44fa0e4a3c4dc546",
+          "de6cf88c6bc142065552f76c",
+          "ea7f0eeec461c1b86ee92980"
+        ],
+        "gold_evidence_source_ids": [
+          "c1d1e021dd0058cfca2629c0"
+        ]
+      },
+      "retrieved_passage_ids": [
+        "T_c1d1e021dd0058cfca2629c0",
+        "T_ea7f0eeec461c1b86ee92980",
+        "T_430fd1a2ade40c791d810561",
+        "T_de6cf88c6bc142065552f76c",
+        "T_b01522eb635d715a82f81844",
+        "T_c5314a8b44fa0e4a3c4dc546",
+        "T_1d2a16cadb62219f94d7c089",
+        "T_24c282ac8482c163bd62e52b",
+        "T_aa5ea06d0d518b07f7d2a298",
+        "T_ebae2ccb8e8d109c3ac92f0d",
+        "T_2a9ba1c46e339b96b3825d82",
+        "T_754561b88ab9dba6a367959e",
+        "T_ccdfce70e4d53064a3403f8c",
+        "T_fcdc737f469036001961ae70",
+        "T_d97a4f11435077577d252505",
+        "T_2a0b2bd73d2cce532a2b6011",
+        "T_51973bc38596736396d738c9",
+        "T_dda516d6b4c475479a36817a",
+        "T_2e88571dd8df438bbc312d47",
+        "T_204b0d620dfca51108defbe1"
+      ],
+      "packed_passage_ids": [
+        "T_c1d1e021dd0058cfca2629c0",
+        "T_ea7f0eeec461c1b86ee92980",
+        "T_430fd1a2ade40c791d810561",
+        "T_de6cf88c6bc142065552f76c",
+        "T_b01522eb635d715a82f81844",
+        "T_c5314a8b44fa0e4a3c4dc546",
+        "T_1d2a16cadb62219f94d7c089",
+        "T_24c282ac8482c163bd62e52b"
+      ],
+      "packed_context_tokens": 3895,
+      "retrieval_evidence_span_recall@10": 1.0,
+      "retrieval_packed_context_span_recall": 1.0
+    },
+    {
+      "id": "cur-test-006",
+      "question": "What may happen when early-stage patients are left unoccupied and distressed by confinement?",
+      "category": "multi_evidence_reasoning",
+      "answer": "When early-stage patients are left unoccupied and distressed by confinement, they may become fretful, irritated, sleep poorly, eat little, and make violent efforts to escape. If nothing is done to occupy their time and mind, these conditions will often be sufficient to provoke violence [source=a5051e3476bd1977ac65243c].",
+      "references": [
+        "Confinement may make them fretful and lead to violent efforts to escape; without occupation, their distress may also provoke violence."
+      ],
+      "answer_metrics": {
+        "token_f1": 0.40625,
+        "exact_match": 0.0,
+        "rouge_l": 0.34375
+      },
+      "citation_metrics": {
+        "citation_count": 1,
+        "citation_present": 1.0,
+        "context_citation_precision": 1.0,
+        "gold_evidence_citation_precision": 1.0,
+        "gold_evidence_citation_recall": 1.0,
+        "cited_source_ids": [
+          "a5051e3476bd1977ac65243c"
+        ],
+        "context_source_ids": [
+          "2a0b2bd73d2cce532a2b6011",
+          "3119af000d330c99ef0418b1",
+          "622a1c31dbc6a3df01b18fe9",
+          "8b9875a875af0a45f4900e76",
+          "a5051e3476bd1977ac65243c",
+          "aa5ea06d0d518b07f7d2a298",
+          "c1d1e021dd0058cfca2629c0",
+          "de6cf88c6bc142065552f76c"
+        ],
+        "gold_evidence_source_ids": [
+          "a5051e3476bd1977ac65243c"
+        ]
+      },
+      "retrieved_passage_ids": [
+        "T_a5051e3476bd1977ac65243c",
+        "T_c1d1e021dd0058cfca2629c0",
+        "T_3119af000d330c99ef0418b1",
+        "T_8b9875a875af0a45f4900e76",
+        "T_2a0b2bd73d2cce532a2b6011",
+        "T_de6cf88c6bc142065552f76c",
+        "T_622a1c31dbc6a3df01b18fe9",
+        "T_aa5ea06d0d518b07f7d2a298",
+        "T_1d2a16cadb62219f94d7c089",
+        "T_4f1cdc732e81c85ce2c1b4a1",
+        "T_8d61fe72e8e28762a26614a4",
+        "T_fcdc737f469036001961ae70",
+        "T_ebae2ccb8e8d109c3ac92f0d",
+        "T_46ee6edab6639ac05028a759",
+        "T_b01522eb635d715a82f81844",
+        "T_2a9ba1c46e339b96b3825d82",
+        "T_d35e8481fbc3f65363ef81f0",
+        "T_24c282ac8482c163bd62e52b",
+        "T_430fd1a2ade40c791d810561",
+        "T_51973bc38596736396d738c9"
+      ],
+      "packed_passage_ids": [
+        "T_a5051e3476bd1977ac65243c",
+        "T_c1d1e021dd0058cfca2629c0",
+        "T_3119af000d330c99ef0418b1",
+        "T_8b9875a875af0a45f4900e76",
+        "T_2a0b2bd73d2cce532a2b6011",
+        "T_de6cf88c6bc142065552f76c",
+        "T_622a1c31dbc6a3df01b18fe9",
+        "T_aa5ea06d0d518b07f7d2a298"
+      ],
+      "packed_context_tokens": 3945,
+      "retrieval_evidence_span_recall@10": 1.0,
+      "retrieval_packed_context_span_recall": 1.0
+    },
+    {
+      "id": "cur-test-007",
+      "question": "How should food be offered to a patient who alternates between refusing it and accepting it?",
+      "category": "single_fact",
+      "answer": "Offer food often—give it repeatedly at short intervals because such patients may refuse one hour and accept the next. Use milk as a base and, as able, add nutritious adjuncts such as raw egg, gruel, boiled rice, oatmeal, custard or bread, offering each time the patient is willing. [source=4f34f5769fc76bc537fea4d3]",
+      "references": [
+        "It should be offered frequently."
+      ],
+      "answer_metrics": {
+        "token_f1": 0.039999999999999994,
+        "exact_match": 0.0,
+        "rouge_l": 0.039999999999999994
+      },
+      "citation_metrics": {
+        "citation_count": 1,
+        "citation_present": 1.0,
+        "context_citation_precision": 1.0,
+        "gold_evidence_citation_precision": 1.0,
+        "gold_evidence_citation_recall": 1.0,
+        "cited_source_ids": [
+          "4f34f5769fc76bc537fea4d3"
+        ],
+        "context_source_ids": [
+          "23754d598e633b74bd00513f",
+          "3119af000d330c99ef0418b1",
+          "4f34f5769fc76bc537fea4d3",
+          "63a88ceae524db2d0646fb98",
+          "754561b88ab9dba6a367959e",
+          "8b9875a875af0a45f4900e76",
+          "ccdfce70e4d53064a3403f8c",
+          "d35e8481fbc3f65363ef81f0"
+        ],
+        "gold_evidence_source_ids": [
+          "4f34f5769fc76bc537fea4d3"
+        ]
+      },
+      "retrieved_passage_ids": [
+        "T_4f34f5769fc76bc537fea4d3",
+        "T_63a88ceae524db2d0646fb98",
+        "T_3119af000d330c99ef0418b1",
+        "T_8b9875a875af0a45f4900e76",
+        "T_754561b88ab9dba6a367959e",
+        "T_ccdfce70e4d53064a3403f8c",
+        "T_23754d598e633b74bd00513f",
+        "T_d35e8481fbc3f65363ef81f0",
+        "T_7723d3fc6525a4372527c8bf",
+        "T_96cdd8185b4fad63b719ad04",
+        "T_a5051e3476bd1977ac65243c",
+        "T_1d2a16cadb62219f94d7c089",
+        "T_ebae2ccb8e8d109c3ac92f0d",
+        "T_32e3b403139914b440cfe24e",
+        "T_daf4749ff185c342ddd6cee6",
+        "T_51973bc38596736396d738c9",
+        "T_d97a4f11435077577d252505",
+        "T_fcdc737f469036001961ae70",
+        "T_430fd1a2ade40c791d810561",
+        "T_2e8667b3bad13ea334ce6ca6"
+      ],
+      "packed_passage_ids": [
+        "T_4f34f5769fc76bc537fea4d3",
+        "T_63a88ceae524db2d0646fb98",
+        "T_3119af000d330c99ef0418b1",
+        "T_8b9875a875af0a45f4900e76",
+        "T_754561b88ab9dba6a367959e",
+        "T_ccdfce70e4d53064a3403f8c",
+        "T_23754d598e633b74bd00513f",
+        "T_d35e8481fbc3f65363ef81f0"
+      ],
+      "packed_context_tokens": 3972,
+      "retrieval_evidence_span_recall@10": 1.0,
+      "retrieval_packed_context_span_recall": 1.0
+    },
+    {
+      "id": "cur-test-008",
+      "question": "Which symptoms does the manual list as warnings of danger that should be reported?",
+      "category": "single_fact",
+      "answer": "The manual lists the following symptoms as warnings of danger that should be reported to the physician: partial or complete unconsciousness; slow and labored breathing; rapid, shallow, or irregular breathing; increased weakness and rapidity of heart or pulse; cold hands and feet; picking at the bedclothes; picking at imaginary objects in the air; and vacant staring. [source=6c3ed0f0583234686a14c3c6]",
+      "references": [
+        "Unconsciousness; slow, labored, rapid, shallow, or irregular breathing; increased weakness and a rapid heart or pulse; cold hands or feet; picking at bedclothes or imaginary objects; or vacant staring."
+      ],
+      "answer_metrics": {
+        "token_f1": 0.6329113924050633,
+        "exact_match": 0.0,
+        "rouge_l": 0.6075949367088607
+      },
+      "citation_metrics": {
+        "citation_count": 1,
+        "citation_present": 1.0,
+        "context_citation_precision": 1.0,
+        "gold_evidence_citation_precision": 1.0,
+        "gold_evidence_citation_recall": 1.0,
+        "cited_source_ids": [
+          "6c3ed0f0583234686a14c3c6"
+        ],
+        "context_source_ids": [
+          "2a9ba1c46e339b96b3825d82",
+          "3119af000d330c99ef0418b1",
+          "4f34f5769fc76bc537fea4d3",
+          "6c3ed0f0583234686a14c3c6",
+          "8d61fe72e8e28762a26614a4",
+          "96cdd8185b4fad63b719ad04",
+          "d97a4f11435077577d252505",
+          "fcdc737f469036001961ae70"
+        ],
+        "gold_evidence_source_ids": [
+          "6c3ed0f0583234686a14c3c6"
+        ]
+      },
+      "retrieved_passage_ids": [
+        "T_6c3ed0f0583234686a14c3c6",
+        "T_2a9ba1c46e339b96b3825d82",
+        "T_8d61fe72e8e28762a26614a4",
+        "T_d97a4f11435077577d252505",
+        "T_96cdd8185b4fad63b719ad04",
+        "T_fcdc737f469036001961ae70",
+        "T_4f34f5769fc76bc537fea4d3",
+        "T_3119af000d330c99ef0418b1",
+        "T_fffa1fccdca51c2d85fe434b",
+        "T_6c502e28aee5b51624fe36cc",
+        "T_9dc68727c2b4c2f06dcb8b41",
+        "T_c5314a8b44fa0e4a3c4dc546",
+        "T_de6cf88c6bc142065552f76c",
+        "T_1d2a16cadb62219f94d7c089",
+        "T_2a0b2bd73d2cce532a2b6011",
+        "T_51973bc38596736396d738c9",
+        "T_ebae2ccb8e8d109c3ac92f0d",
+        "T_7723d3fc6525a4372527c8bf",
+        "T_aa5ea06d0d518b07f7d2a298",
+        "T_b01522eb635d715a82f81844"
+      ],
+      "packed_passage_ids": [
+        "T_6c3ed0f0583234686a14c3c6",
+        "T_2a9ba1c46e339b96b3825d82",
+        "T_8d61fe72e8e28762a26614a4",
+        "T_d97a4f11435077577d252505",
+        "T_96cdd8185b4fad63b719ad04",
+        "T_fcdc737f469036001961ae70",
+        "T_4f34f5769fc76bc537fea4d3",
+        "T_3119af000d330c99ef0418b1"
+      ],
+      "packed_context_tokens": 4064,
+      "retrieval_evidence_span_recall@10": 1.0,
+      "retrieval_packed_context_span_recall": 1.0
+    },
+    {
+      "id": "cur-test-009",
+      "question": "What care does the manual recommend for patients recovering from dementia?",
+      "category": "single_fact",
+      "answer": "For patients recovering from dementia, the manual recommends providing all care demanded by confirmed dement patients, plus measures to promote recovery. They must be well fed, regularly taken out for exercise, and encouraged to employ themselves as able [source=fffa1fccdca51c2d85fe434b]. Attendants should report any symptoms of a return to violent conditions, failure to sleep, or changes in health immediately [source=fffa1fccdca51c2d85fe434b]. Additionally, patients should be encouraged to gain confidence in the physician, and their past conditions or disagreeable sickness features should not be mentioned [source=fffa1fccdca51c2d85fe434b].",
+      "references": [
+        "Feed them well, take them out for exercise, and encourage them to work as they are able."
+      ],
+      "answer_metrics": {
+        "token_f1": 0.19148936170212763,
+        "exact_match": 0.0,
+        "rouge_l": 0.1702127659574468
+      },
+      "citation_metrics": {
+        "citation_count": 3,
+        "citation_present": 1.0,
+        "context_citation_precision": 1.0,
+        "gold_evidence_citation_precision": 0.3333333333333333,
+        "gold_evidence_citation_recall": 1.0,
+        "cited_source_ids": [
+          "fffa1fccdca51c2d85fe434b",
+          "fffa1fccdca51c2d85fe434b",
+          "fffa1fccdca51c2d85fe434b"
+        ],
+        "context_source_ids": [
+          "27693d463ceddb7dda2c2f08",
+          "6c3ed0f0583234686a14c3c6",
+          "8b9875a875af0a45f4900e76",
+          "90f384b10e01d98a39e5f818",
+          "a4e97d003189ecae22d1a13e",
+          "c9f99a16007e8863e46599f3",
+          "fffa1fccdca51c2d85fe434b"
+        ],
+        "gold_evidence_source_ids": [
+          "fffa1fccdca51c2d85fe434b"
+        ]
+      },
+      "retrieved_passage_ids": [
+        "T_fffa1fccdca51c2d85fe434b",
+        "T_6c3ed0f0583234686a14c3c6",
+        "T_27693d463ceddb7dda2c2f08",
+        "T_90f384b10e01d98a39e5f818",
+        "T_c9f99a16007e8863e46599f3",
+        "T_8b9875a875af0a45f4900e76",
+        "T_a4e97d003189ecae22d1a13e",
+        "T_d97a4f11435077577d252505",
+        "T_fcdc737f469036001961ae70",
+        "T_0d24254eb7c7a8e3b6b5f48e",
+        "T_24c282ac8482c163bd62e52b",
+        "T_1d59b9a37557ff9f8c476136",
+        "T_8d61fe72e8e28762a26614a4",
+        "T_4f34f5769fc76bc537fea4d3",
+        "T_2a9ba1c46e339b96b3825d82",
+        "T_4942ca8fcf6fe3b28251aa25",
+        "T_2679bbd5ed82631813fd1ad2",
+        "T_1cf2799c8afa279aef5130f2",
+        "T_8937ba1230e86993f2745cc0",
+        "T_31770bd9d885820fb835609c"
+      ],
+      "packed_passage_ids": [
+        "T_fffa1fccdca51c2d85fe434b",
+        "T_6c3ed0f0583234686a14c3c6",
+        "T_27693d463ceddb7dda2c2f08",
+        "T_90f384b10e01d98a39e5f818",
+        "T_c9f99a16007e8863e46599f3",
+        "T_8b9875a875af0a45f4900e76",
+        "T_a4e97d003189ecae22d1a13e"
+      ],
+      "packed_context_tokens": 3911,
+      "retrieval_evidence_span_recall@10": 1.0,
+      "retrieval_packed_context_span_recall": 1.0
+    },
+    {
+      "id": "cur-test-010",
+      "question": "During an epileptic fit, should attendants hold the patient to stop the convulsions?",
+      "category": "single_fact",
+      "answer": "Attendants should not hold a person during an epileptic fit in order to stop the convulsions; they should only restrain the patient if needed to keep him from injuring himself (e.g., place a pillow under the head and loosen neck bands).【source=46ee6edab6639ac05028a759】",
+      "references": [
+        "No. They should prevent injury, not hold the patient to stop convulsions."
+      ],
+      "answer_metrics": {
+        "token_f1": 0.34782608695652173,
+        "exact_match": 0.0,
+        "rouge_l": 0.26086956521739124
+      },
+      "citation_metrics": {
+        "citation_count": 1,
+        "citation_present": 1.0,
+        "context_citation_precision": 1.0,
+        "gold_evidence_citation_precision": 1.0,
+        "gold_evidence_citation_recall": 1.0,
+        "cited_source_ids": [
+          "46ee6edab6639ac05028a759"
+        ],
+        "context_source_ids": [
+          "1ad70ede2f937b917043b2d5",
+          "46ee6edab6639ac05028a759",
+          "51973bc38596736396d738c9",
+          "754561b88ab9dba6a367959e",
+          "a8cf60d1af1d0d9b2038fc8d",
+          "d35e8481fbc3f65363ef81f0",
+          "ebae2ccb8e8d109c3ac92f0d",
+          "fffa1fccdca51c2d85fe434b"
+        ],
+        "gold_evidence_source_ids": [
+          "46ee6edab6639ac05028a759"
+        ]
+      },
+      "retrieved_passage_ids": [
+        "T_46ee6edab6639ac05028a759",
+        "T_1ad70ede2f937b917043b2d5",
+        "T_754561b88ab9dba6a367959e",
+        "T_ebae2ccb8e8d109c3ac92f0d",
+        "T_d35e8481fbc3f65363ef81f0",
+        "T_a8cf60d1af1d0d9b2038fc8d",
+        "T_51973bc38596736396d738c9",
+        "T_fffa1fccdca51c2d85fe434b",
+        "T_23754d598e633b74bd00513f",
+        "T_2a0b2bd73d2cce532a2b6011",
+        "T_1d2a16cadb62219f94d7c089",
+        "T_2a9ba1c46e339b96b3825d82",
+        "T_8d61fe72e8e28762a26614a4",
+        "T_2c980b149ea8d3006f5f01d7",
+        "T_430fd1a2ade40c791d810561",
+        "T_1cf2799c8afa279aef5130f2",
+        "T_a4e97d003189ecae22d1a13e",
+        "T_d97a4f11435077577d252505",
+        "T_d1a748d82b48b3b57e1cc0e3",
+        "T_8937ba1230e86993f2745cc0"
+      ],
+      "packed_passage_ids": [
+        "T_46ee6edab6639ac05028a759",
+        "T_1ad70ede2f937b917043b2d5",
+        "T_754561b88ab9dba6a367959e",
+        "T_ebae2ccb8e8d109c3ac92f0d",
+        "T_d35e8481fbc3f65363ef81f0",
+        "T_a8cf60d1af1d0d9b2038fc8d",
+        "T_51973bc38596736396d738c9",
+        "T_fffa1fccdca51c2d85fe434b"
+      ],
+      "packed_context_tokens": 3876,
+      "retrieval_evidence_span_recall@10": 1.0,
+      "retrieval_packed_context_span_recall": 1.0
+    },
+    {
+      "id": "cur-test-011",
+      "question": "What is required of attendants after an epileptic fit?",
+      "category": "single_fact",
+      "answer": "After an epileptic fit attendants must give the patient **guarded care and close watching** because the patient is often dangerous. They should observe the patient for any change in condition, report any violence, sleeplessness, or other abnormal behavior to the physician, and ensure the patient is kept safe from injury or fire. The attendant must also keep the patient’s environment clean and free of hazards during the recovery period. [source=1ad70ede2f937b917043b2d5]",
+      "references": [
+        "Guarded care and watching, because patients may be dangerous after a fit."
+      ],
+      "answer_metrics": {
+        "token_f1": 0.22535211267605634,
+        "exact_match": 0.0,
+        "rouge_l": 0.16901408450704225
+      },
+      "citation_metrics": {
+        "citation_count": 1,
+        "citation_present": 1.0,
+        "context_citation_precision": 1.0,
+        "gold_evidence_citation_precision": 1.0,
+        "gold_evidence_citation_recall": 1.0,
+        "cited_source_ids": [
+          "1ad70ede2f937b917043b2d5"
+        ],
+        "context_source_ids": [
+          "1ad70ede2f937b917043b2d5",
+          "46ee6edab6639ac05028a759",
+          "491e2f394aeb2f021bf013ff",
+          "81bcb590e3df3b34d2dbec1d",
+          "8937ba1230e86993f2745cc0",
+          "a8cf60d1af1d0d9b2038fc8d",
+          "ebae2ccb8e8d109c3ac92f0d",
+          "fffa1fccdca51c2d85fe434b"
+        ],
+        "gold_evidence_source_ids": [
+          "1ad70ede2f937b917043b2d5"
+        ]
+      },
+      "retrieved_passage_ids": [
+        "T_1ad70ede2f937b917043b2d5",
+        "T_46ee6edab6639ac05028a759",
+        "T_fffa1fccdca51c2d85fe434b",
+        "T_a8cf60d1af1d0d9b2038fc8d",
+        "T_491e2f394aeb2f021bf013ff",
+        "T_81bcb590e3df3b34d2dbec1d",
+        "T_ebae2ccb8e8d109c3ac92f0d",
+        "T_8937ba1230e86993f2745cc0",
+        "T_1cf2799c8afa279aef5130f2",
+        "T_d35e8481fbc3f65363ef81f0",
+        "T_2a0b2bd73d2cce532a2b6011",
+        "T_2a9ba1c46e339b96b3825d82",
+        "T_1d2a16cadb62219f94d7c089",
+        "T_23754d598e633b74bd00513f",
+        "T_8d61fe72e8e28762a26614a4",
+        "T_a4e97d003189ecae22d1a13e",
+        "T_d1a748d82b48b3b57e1cc0e3",
+        "T_ccdfce70e4d53064a3403f8c",
+        "T_0d24254eb7c7a8e3b6b5f48e",
+        "T_073700cda45ad941a402114c"
+      ],
+      "packed_passage_ids": [
+        "T_1ad70ede2f937b917043b2d5",
+        "T_46ee6edab6639ac05028a759",
+        "T_fffa1fccdca51c2d85fe434b",
+        "T_a8cf60d1af1d0d9b2038fc8d",
+        "T_491e2f394aeb2f021bf013ff",
+        "T_81bcb590e3df3b34d2dbec1d",
+        "T_ebae2ccb8e8d109c3ac92f0d",
+        "T_8937ba1230e86993f2745cc0"
+      ],
+      "packed_context_tokens": 3884,
+      "retrieval_evidence_span_recall@10": 1.0,
+      "retrieval_packed_context_span_recall": 1.0
+    },
+    {
+      "id": "cur-test-012",
+      "question": "How does the manual recommend preventing bed-sores in bedridden patients?",
+      "category": "single_fact",
+      "answer": "To prevent bed-sores, keep patients perfectly clean, as wet and dirty conditions increase liability [source=8d1e97514702b67a3537ff12]. If possible, have patients sit up for several hours daily or alternate positions: side, back, and other side [source=8d1e97514702b67a3537ff12]. Support hips with an inflated rubber ring [source=8d1e97514702b67a3537ff12]. If skin is red, bathe the area in diluted alcohol, dry it, and dust with powdered oxide of zinc or corn-starch flour [source=8d1e97514702b67a3537ff12]. Ensure regular washing, drying, and bed changes to maintain cleanliness [source=622a1c31dbc6a3df01b18fe9].",
+      "references": [
+        "Keep them clean; if possible, sit them up for several hours daily or reposition them from side to side and back."
+      ],
+      "answer_metrics": {
+        "token_f1": 0.35555555555555557,
+        "exact_match": 0.0,
+        "rouge_l": 0.3111111111111111
+      },
+      "citation_metrics": {
+        "citation_count": 5,
+        "citation_present": 1.0,
+        "context_citation_precision": 1.0,
+        "gold_evidence_citation_precision": 0.2,
+        "gold_evidence_citation_recall": 1.0,
+        "cited_source_ids": [
+          "8d1e97514702b67a3537ff12",
+          "8d1e97514702b67a3537ff12",
+          "8d1e97514702b67a3537ff12",
+          "8d1e97514702b67a3537ff12",
+          "622a1c31dbc6a3df01b18fe9"
+        ],
+        "context_source_ids": [
+          "1ad70ede2f937b917043b2d5",
+          "2a0b2bd73d2cce532a2b6011",
+          "51973bc38596736396d738c9",
+          "622a1c31dbc6a3df01b18fe9",
+          "8d1e97514702b67a3537ff12",
+          "d97a4f11435077577d252505",
+          "ed9f699a4295ec95a6d1bbe8",
+          "fcdc737f469036001961ae70"
+        ],
+        "gold_evidence_source_ids": [
+          "8d1e97514702b67a3537ff12"
+        ]
+      },
+      "retrieved_passage_ids": [
+        "T_8d1e97514702b67a3537ff12",
+        "T_622a1c31dbc6a3df01b18fe9",
+        "T_fcdc737f469036001961ae70",
+        "T_d97a4f11435077577d252505",
+        "T_ed9f699a4295ec95a6d1bbe8",
+        "T_2a0b2bd73d2cce532a2b6011",
+        "T_51973bc38596736396d738c9",
+        "T_1ad70ede2f937b917043b2d5",
+        "T_6c3ed0f0583234686a14c3c6",
+        "T_ccdfce70e4d53064a3403f8c",
+        "T_0d24254eb7c7a8e3b6b5f48e",
+        "T_0b1e2f858ca8795a6cbeab6d",
+        "T_d35e8481fbc3f65363ef81f0",
+        "T_63a9608de60cfbf5e4d801ed",
+        "T_c9f99a16007e8863e46599f3",
+        "T_46ee6edab6639ac05028a759",
+        "T_23754d598e633b74bd00513f",
+        "T_32e3b403139914b440cfe24e",
+        "T_2e8667b3bad13ea334ce6ca6",
+        "T_7723d3fc6525a4372527c8bf"
+      ],
+      "packed_passage_ids": [
+        "T_8d1e97514702b67a3537ff12",
+        "T_622a1c31dbc6a3df01b18fe9",
+        "T_fcdc737f469036001961ae70",
+        "T_d97a4f11435077577d252505",
+        "T_ed9f699a4295ec95a6d1bbe8",
+        "T_2a0b2bd73d2cce532a2b6011",
+        "T_51973bc38596736396d738c9",
+        "T_1ad70ede2f937b917043b2d5"
+      ],
+      "packed_context_tokens": 3887,
+      "retrieval_evidence_span_recall@10": 1.0,
+      "retrieval_packed_context_span_recall": 1.0
+    },
+    {
+      "id": "cur-test-013",
+      "question": "What should attendants do when a patient has been injured?",
+      "category": "single_fact",
+      "answer": "Attendants must **report every injury to a physician at once** and then protect the injured part from further harm.  They should keep the area quiet, avoid rough handling that could turn a simple fracture into a compound one, and use splints only loosely, loosening them as needed to preserve circulation.  If the patient becomes violent, they should be held firmly but gently, and the injured limb should be carried with the patient.  All of these steps are intended to prevent additional pain or damage while awaiting medical care【source=8d61fe72e8e28762a26614a4】.",
+      "references": [
+        "Report every injury to a physician immediately."
+      ],
+      "answer_metrics": {
+        "token_f1": 0.11627906976744186,
+        "exact_match": 0.0,
+        "rouge_l": 0.11627906976744186
+      },
+      "citation_metrics": {
+        "citation_count": 1,
+        "citation_present": 1.0,
+        "context_citation_precision": 1.0,
+        "gold_evidence_citation_precision": 1.0,
+        "gold_evidence_citation_recall": 1.0,
+        "cited_source_ids": [
+          "8d61fe72e8e28762a26614a4"
+        ],
+        "context_source_ids": [
+          "1cf2799c8afa279aef5130f2",
+          "23754d598e633b74bd00513f",
+          "2a9ba1c46e339b96b3825d82",
+          "430fd1a2ade40c791d810561",
+          "8d61fe72e8e28762a26614a4",
+          "a4e97d003189ecae22d1a13e",
+          "d35e8481fbc3f65363ef81f0",
+          "ebae2ccb8e8d109c3ac92f0d"
+        ],
+        "gold_evidence_source_ids": [
+          "8d61fe72e8e28762a26614a4"
+        ]
+      },
+      "retrieved_passage_ids": [
+        "T_d35e8481fbc3f65363ef81f0",
+        "T_8d61fe72e8e28762a26614a4",
+        "T_23754d598e633b74bd00513f",
+        "T_ebae2ccb8e8d109c3ac92f0d",
+        "T_a4e97d003189ecae22d1a13e",
+        "T_1cf2799c8afa279aef5130f2",
+        "T_430fd1a2ade40c791d810561",
+        "T_2a9ba1c46e339b96b3825d82",
+        "T_2a0b2bd73d2cce532a2b6011",
+        "T_1d2a16cadb62219f94d7c089",
+        "T_31770bd9d885820fb835609c",
+        "T_a8cf60d1af1d0d9b2038fc8d",
+        "T_ccdfce70e4d53064a3403f8c",
+        "T_363118afb7c29ca7818cfbc2",
+        "T_d1a748d82b48b3b57e1cc0e3",
+        "T_8937ba1230e86993f2745cc0",
+        "T_6c502e28aee5b51624fe36cc",
+        "T_96cdd8185b4fad63b719ad04",
+        "T_9dc68727c2b4c2f06dcb8b41",
+        "T_1cef357c97ab31231378764d"
+      ],
+      "packed_passage_ids": [
+        "T_d35e8481fbc3f65363ef81f0",
+        "T_8d61fe72e8e28762a26614a4",
+        "T_23754d598e633b74bd00513f",
+        "T_ebae2ccb8e8d109c3ac92f0d",
+        "T_a4e97d003189ecae22d1a13e",
+        "T_1cf2799c8afa279aef5130f2",
+        "T_430fd1a2ade40c791d810561",
+        "T_2a9ba1c46e339b96b3825d82"
+      ],
+      "packed_context_tokens": 3859,
+      "retrieval_evidence_span_recall@10": 1.0,
+      "retrieval_packed_context_span_recall": 1.0
+    },
+    {
+      "id": "cur-test-014",
+      "question": "Why must attendants check a splint after a fracture?",
+      "category": "single_fact",
+      "answer": "Attendants must check a splint after a fracture because the splint can become too tight as the limb swells, potentially cutting off circulation and causing gangrene. Since many patients cannot tell if the part is swollen or painful, regular inspection prevents this complication. [source=8d61fe72e8e28762a26614a4] [source=9dc68727c2b4c2f06dcb8b41]",
+      "references": [
+        "Swelling can make a splint restrict circulation and cause gangrene."
+      ],
+      "answer_metrics": {
+        "token_f1": 0.2127659574468085,
+        "exact_match": 0.0,
+        "rouge_l": 0.1702127659574468
+      },
+      "citation_metrics": {
+        "citation_count": 2,
+        "citation_present": 1.0,
+        "context_citation_precision": 1.0,
+        "gold_evidence_citation_precision": 0.5,
+        "gold_evidence_citation_recall": 1.0,
+        "cited_source_ids": [
+          "8d61fe72e8e28762a26614a4",
+          "9dc68727c2b4c2f06dcb8b41"
+        ],
+        "context_source_ids": [
+          "073700cda45ad941a402114c",
+          "0b1e2f858ca8795a6cbeab6d",
+          "51973bc38596736396d738c9",
+          "8937ba1230e86993f2745cc0",
+          "8d61fe72e8e28762a26614a4",
+          "9dc68727c2b4c2f06dcb8b41",
+          "d35e8481fbc3f65363ef81f0",
+          "ebae2ccb8e8d109c3ac92f0d"
+        ],
+        "gold_evidence_source_ids": [
+          "8d61fe72e8e28762a26614a4"
+        ]
+      },
+      "retrieved_passage_ids": [
+        "T_8d61fe72e8e28762a26614a4",
+        "T_9dc68727c2b4c2f06dcb8b41",
+        "T_0b1e2f858ca8795a6cbeab6d",
+        "T_073700cda45ad941a402114c",
+        "T_ebae2ccb8e8d109c3ac92f0d",
+        "T_d35e8481fbc3f65363ef81f0",
+        "T_51973bc38596736396d738c9",
+        "T_8937ba1230e86993f2745cc0",
+        "T_2e8667b3bad13ea334ce6ca6",
+        "T_23754d598e633b74bd00513f",
+        "T_491e2f394aeb2f021bf013ff",
+        "T_430fd1a2ade40c791d810561",
+        "T_d97a4f11435077577d252505",
+        "T_ed9f699a4295ec95a6d1bbe8",
+        "T_0d24254eb7c7a8e3b6b5f48e",
+        "T_9d0c289ecba2157c3a9ac856",
+        "T_96cdd8185b4fad63b719ad04",
+        "T_63a9608de60cfbf5e4d801ed",
+        "T_24c282ac8482c163bd62e52b",
+        "T_32e3b403139914b440cfe24e"
+      ],
+      "packed_passage_ids": [
+        "T_8d61fe72e8e28762a26614a4",
+        "T_9dc68727c2b4c2f06dcb8b41",
+        "T_0b1e2f858ca8795a6cbeab6d",
+        "T_073700cda45ad941a402114c",
+        "T_ebae2ccb8e8d109c3ac92f0d",
+        "T_d35e8481fbc3f65363ef81f0",
+        "T_51973bc38596736396d738c9",
+        "T_8937ba1230e86993f2745cc0"
+      ],
+      "packed_context_tokens": 3892,
+      "retrieval_evidence_span_recall@10": 1.0,
+      "retrieval_packed_context_span_recall": 1.0
+    },
+    {
+      "id": "cur-test-015",
+      "question": "What may happen if a choking patient does not receive relief?",
+      "category": "single_fact",
+      "answer": "If a choking patient does not receive relief, the sufferer will die in a few minutes [source=63a9608de60cfbf5e4d801ed]. Additionally, the patient will show immediate signs of distress, make violent but ineffectual attempts to breathe, and their face will quickly become a dark blue color due to the accumulation of carbonic acid in the blood [source=63a9608de60cfbf5e4d801ed].",
+      "references": [
+        "The patient may die within a few minutes."
+      ],
+      "answer_metrics": {
+        "token_f1": 0.1568627450980392,
+        "exact_match": 0.0,
+        "rouge_l": 0.1568627450980392
+      },
+      "citation_metrics": {
+        "citation_count": 2,
+        "citation_present": 1.0,
+        "context_citation_precision": 1.0,
+        "gold_evidence_citation_precision": 0.5,
+        "gold_evidence_citation_recall": 1.0,
+        "cited_source_ids": [
+          "63a9608de60cfbf5e4d801ed",
+          "63a9608de60cfbf5e4d801ed"
+        ],
+        "context_source_ids": [
+          "23754d598e633b74bd00513f",
+          "3119af000d330c99ef0418b1",
+          "32e3b403139914b440cfe24e",
+          "430fd1a2ade40c791d810561",
+          "51973bc38596736396d738c9",
+          "63a9608de60cfbf5e4d801ed",
+          "8b9875a875af0a45f4900e76",
+          "ebae2ccb8e8d109c3ac92f0d"
+        ],
+        "gold_evidence_source_ids": [
+          "63a9608de60cfbf5e4d801ed"
+        ]
+      },
+      "retrieved_passage_ids": [
+        "T_63a9608de60cfbf5e4d801ed",
+        "T_32e3b403139914b440cfe24e",
+        "T_430fd1a2ade40c791d810561",
+        "T_23754d598e633b74bd00513f",
+        "T_ebae2ccb8e8d109c3ac92f0d",
+        "T_3119af000d330c99ef0418b1",
+        "T_51973bc38596736396d738c9",
+        "T_8b9875a875af0a45f4900e76",
+        "T_0b1e2f858ca8795a6cbeab6d",
+        "T_8d61fe72e8e28762a26614a4",
+        "T_4f34f5769fc76bc537fea4d3",
+        "T_9dc68727c2b4c2f06dcb8b41",
+        "T_9d0c289ecba2157c3a9ac856",
+        "T_fcdc737f469036001961ae70",
+        "T_073700cda45ad941a402114c",
+        "T_d97a4f11435077577d252505",
+        "T_d35e8481fbc3f65363ef81f0",
+        "T_1d2a16cadb62219f94d7c089",
+        "T_ccdfce70e4d53064a3403f8c",
+        "T_96cdd8185b4fad63b719ad04"
+      ],
+      "packed_passage_ids": [
+        "T_63a9608de60cfbf5e4d801ed",
+        "T_32e3b403139914b440cfe24e",
+        "T_430fd1a2ade40c791d810561",
+        "T_23754d598e633b74bd00513f",
+        "T_ebae2ccb8e8d109c3ac92f0d",
+        "T_3119af000d330c99ef0418b1",
+        "T_51973bc38596736396d738c9",
+        "T_8b9875a875af0a45f4900e76"
+      ],
+      "packed_context_tokens": 3912,
+      "retrieval_evidence_span_recall@10": 1.0,
+      "retrieval_packed_context_span_recall": 1.0
+    },
+    {
+      "id": "cur-test-016",
+      "question": "What does the manual advise when a patient has swallowed glass?",
+      "category": "single_fact",
+      "answer": "The manual says that if a patient has swallowed glass, an emetic or a cathartic must **not** be given. Instead, the patient should be fed foods that tend to constipate the bowels and that will enclose the glass and coat its sharp edges—such as potatoes (especially sweet potatoes), oatmeal, or a thick Indian‑meal pudding. Cotton, if available, may also be given because its fibres will bind the glass and protect the gastrointestinal tract【source=9d0c289ecba2157c3a9ac856】.",
+      "references": [
+        "Do not give an emetic or a cathartic."
+      ],
+      "answer_metrics": {
+        "token_f1": 0.11594202898550725,
+        "exact_match": 0.0,
+        "rouge_l": 0.08695652173913042
+      },
+      "citation_metrics": {
+        "citation_count": 1,
+        "citation_present": 1.0,
+        "context_citation_precision": 1.0,
+        "gold_evidence_citation_precision": 1.0,
+        "gold_evidence_citation_recall": 1.0,
+        "cited_source_ids": [
+          "9d0c289ecba2157c3a9ac856"
+        ],
+        "context_source_ids": [
+          "32e3b403139914b440cfe24e",
+          "430fd1a2ade40c791d810561",
+          "63a9608de60cfbf5e4d801ed",
+          "6c502e28aee5b51624fe36cc",
+          "754561b88ab9dba6a367959e",
+          "9d0c289ecba2157c3a9ac856",
+          "ccdfce70e4d53064a3403f8c",
+          "d35e8481fbc3f65363ef81f0"
+        ],
+        "gold_evidence_source_ids": [
+          "9d0c289ecba2157c3a9ac856"
+        ]
+      },
+      "retrieved_passage_ids": [
+        "T_9d0c289ecba2157c3a9ac856",
+        "T_6c502e28aee5b51624fe36cc",
+        "T_754561b88ab9dba6a367959e",
+        "T_63a9608de60cfbf5e4d801ed",
+        "T_430fd1a2ade40c791d810561",
+        "T_32e3b403139914b440cfe24e",
+        "T_d35e8481fbc3f65363ef81f0",
+        "T_ccdfce70e4d53064a3403f8c",
+        "T_2485cebe59970c899d29a777",
+        "T_073700cda45ad941a402114c",
+        "T_7723d3fc6525a4372527c8bf",
+        "T_96cdd8185b4fad63b719ad04",
+        "T_8d61fe72e8e28762a26614a4",
+        "T_23754d598e633b74bd00513f",
+        "T_2e8667b3bad13ea334ce6ca6",
+        "T_51973bc38596736396d738c9",
+        "T_4b9c32248a472526b5b814e7",
+        "T_1d59b9a37557ff9f8c476136",
+        "T_bac74dfe3c3b99da2192dedb",
+        "T_204b0d620dfca51108defbe1"
+      ],
+      "packed_passage_ids": [
+        "T_9d0c289ecba2157c3a9ac856",
+        "T_6c502e28aee5b51624fe36cc",
+        "T_754561b88ab9dba6a367959e",
+        "T_63a9608de60cfbf5e4d801ed",
+        "T_430fd1a2ade40c791d810561",
+        "T_32e3b403139914b440cfe24e",
+        "T_d35e8481fbc3f65363ef81f0",
+        "T_ccdfce70e4d53064a3403f8c"
+      ],
+      "packed_context_tokens": 3984,
+      "retrieval_evidence_span_recall@10": 1.0,
+      "retrieval_packed_context_span_recall": 1.0
+    },
+    {
+      "id": "cur-test-017",
+      "question": "Which symptoms from prolonged or large medicine doses should be reported?",
+      "category": "single_fact",
+      "answer": "Symptoms that an attendant should report when a patient receives prolonged or large doses of medicine include: eruptions on the face and body, puffiness around the eyes, irritation and running of the eyes, a metallic taste in the mouth, bleeding of the gums or soreness of the teeth, profuse flow of saliva, nausea, vomiting, diarrhoea, constipation, indigestion, ringing of the ears, a feeling of fullness in the head, headache, dizziness, drowsiness, coma, convulsions, or convulsive movements of muscles. [source=754561b88ab9dba6a367959e]",
+      "references": [
+        "Report rashes, puffiness or irritation around the eyes, metallic taste, bleeding gums or sore teeth, and other listed effects such as nausea, vomiting, bowel changes, dizziness, drowsiness, or convulsions."
+      ],
+      "answer_metrics": {
+        "token_f1": 0.40425531914893625,
+        "exact_match": 0.0,
+        "rouge_l": 0.3191489361702128
+      },
+      "citation_metrics": {
+        "citation_count": 1,
+        "citation_present": 1.0,
+        "context_citation_precision": 1.0,
+        "gold_evidence_citation_precision": 1.0,
+        "gold_evidence_citation_recall": 1.0,
+        "cited_source_ids": [
+          "754561b88ab9dba6a367959e"
+        ],
+        "context_source_ids": [
+          "2a9ba1c46e339b96b3825d82",
+          "2e8667b3bad13ea334ce6ca6",
+          "3755e29c51dacfae7d6ece4d",
+          "6c3ed0f0583234686a14c3c6",
+          "6c502e28aee5b51624fe36cc",
+          "754561b88ab9dba6a367959e",
+          "8fc14cdd280c90613e6a535f",
+          "a8cf60d1af1d0d9b2038fc8d"
+        ],
+        "gold_evidence_source_ids": [
+          "754561b88ab9dba6a367959e"
+        ]
+      },
+      "retrieved_passage_ids": [
+        "T_754561b88ab9dba6a367959e",
+        "T_2e8667b3bad13ea334ce6ca6",
+        "T_6c3ed0f0583234686a14c3c6",
+        "T_3755e29c51dacfae7d6ece4d",
+        "T_8fc14cdd280c90613e6a535f",
+        "T_6c502e28aee5b51624fe36cc",
+        "T_2a9ba1c46e339b96b3825d82",
+        "T_63a88ceae524db2d0646fb98",
+        "T_4b9c32248a472526b5b814e7",
+        "T_fcdc737f469036001961ae70",
+        "T_8d61fe72e8e28762a26614a4",
+        "T_4f34f5769fc76bc537fea4d3",
+        "T_9d0c289ecba2157c3a9ac856",
+        "T_3119af000d330c99ef0418b1",
+        "T_a8cf60d1af1d0d9b2038fc8d",
+        "T_d97a4f11435077577d252505",
+        "T_7723d3fc6525a4372527c8bf",
+        "T_9dc68727c2b4c2f06dcb8b41",
+        "T_27693d463ceddb7dda2c2f08",
+        "T_aa5ea06d0d518b07f7d2a298"
+      ],
+      "packed_passage_ids": [
+        "T_754561b88ab9dba6a367959e",
+        "T_2e8667b3bad13ea334ce6ca6",
+        "T_6c3ed0f0583234686a14c3c6",
+        "T_3755e29c51dacfae7d6ece4d",
+        "T_8fc14cdd280c90613e6a535f",
+        "T_6c502e28aee5b51624fe36cc",
+        "T_2a9ba1c46e339b96b3825d82",
+        "T_a8cf60d1af1d0d9b2038fc8d"
+      ],
+      "packed_context_tokens": 4053,
+      "retrieval_evidence_span_recall@10": 1.0,
+      "retrieval_packed_context_span_recall": 1.0
+    },
+    {
+      "id": "cur-test-018",
+      "question": "What does the manual say about the use of alcohol in emergencies?",
+      "category": "single_fact",
+      "answer": "The manual states that alcohol is primarily used to stimulate the heart when it is very weak, the pulse is imperceptible, the face is pale, and extremities are cold [source=4f2b770699243fb89ff66fb2]. In emergencies, it should only be given with a good reason, not simply to feel like doing something, as it may cause fatal harm [source=3755e29c51dacfae7d6ece4d]. The dose is a tablespoonful in water, repeated no more than two or three times [source=3755e29c51dacfae7d6ece4d]. If the patient becomes restless, flushed, or the pulse becomes rapid and feeble, the alcohol is doing harm and should be discontinued [source=4f2b770699243fb89ff66fb2].",
+      "references": [
+        "It should not be given without a good reason because it may cause serious or fatal harm."
+      ],
+      "answer_metrics": {
+        "token_f1": 0.27083333333333337,
+        "exact_match": 0.0,
+        "rouge_l": 0.2291666666666667
+      },
+      "citation_metrics": {
+        "citation_count": 4,
+        "citation_present": 1.0,
+        "context_citation_precision": 1.0,
+        "gold_evidence_citation_precision": 0.25,
+        "gold_evidence_citation_recall": 1.0,
+        "cited_source_ids": [
+          "4f2b770699243fb89ff66fb2",
+          "3755e29c51dacfae7d6ece4d",
+          "3755e29c51dacfae7d6ece4d",
+          "4f2b770699243fb89ff66fb2"
+        ],
+        "context_source_ids": [
+          "2a9ba1c46e339b96b3825d82",
+          "3755e29c51dacfae7d6ece4d",
+          "4f2b770699243fb89ff66fb2",
+          "51973bc38596736396d738c9",
+          "63a88ceae524db2d0646fb98",
+          "6c502e28aee5b51624fe36cc",
+          "8d1e97514702b67a3537ff12",
+          "8fc14cdd280c90613e6a535f"
+        ],
+        "gold_evidence_source_ids": [
+          "4f2b770699243fb89ff66fb2"
+        ]
+      },
+      "retrieved_passage_ids": [
+        "T_4f2b770699243fb89ff66fb2",
+        "T_3755e29c51dacfae7d6ece4d",
+        "T_63a88ceae524db2d0646fb98",
+        "T_8d1e97514702b67a3537ff12",
+        "T_6c502e28aee5b51624fe36cc",
+        "T_8fc14cdd280c90613e6a535f",
+        "T_2a9ba1c46e339b96b3825d82",
+        "T_51973bc38596736396d738c9",
+        "T_27693d463ceddb7dda2c2f08",
+        "T_2c980b149ea8d3006f5f01d7",
+        "T_ebae2ccb8e8d109c3ac92f0d",
+        "T_430fd1a2ade40c791d810561",
+        "T_9d0c289ecba2157c3a9ac856",
+        "T_8d61fe72e8e28762a26614a4",
+        "T_63a9608de60cfbf5e4d801ed",
+        "T_2a0b2bd73d2cce532a2b6011",
+        "T_9dc68727c2b4c2f06dcb8b41",
+        "T_a8cf60d1af1d0d9b2038fc8d",
+        "T_ebd6711da294888269eaf688",
+        "T_2e88571dd8df438bbc312d47"
+      ],
+      "packed_passage_ids": [
+        "T_4f2b770699243fb89ff66fb2",
+        "T_3755e29c51dacfae7d6ece4d",
+        "T_63a88ceae524db2d0646fb98",
+        "T_8d1e97514702b67a3537ff12",
+        "T_6c502e28aee5b51624fe36cc",
+        "T_8fc14cdd280c90613e6a535f",
+        "T_2a9ba1c46e339b96b3825d82",
+        "T_51973bc38596736396d738c9"
+      ],
+      "packed_context_tokens": 4044,
+      "retrieval_evidence_span_recall@10": 1.0,
+      "retrieval_packed_context_span_recall": 1.0
+    },
+    {
+      "id": "cur-test-019",
+      "question": "How do the manual's instructions differ during an epileptic fit and after it ends?",
+      "category": "multi_evidence_reasoning",
+      "answer": "During a seizure the attendant should **not try to stop the convulsions**, but only keep the patient from hurting himself—place a pillow under the head and loosen any bands around the neck【source=46ee6edab6639ac05028a759】.  \n\nAfter the seizure the patient is often **dangerous and must be closely supervised**, with guarded care and constant watching to prevent violent or self‑destructive acts【source=46ee6edab6639ac05028a759】【source=1ad70ede2f937b917043b2d5】.",
+      "references": [
+        "During the fit, prevent injury without restraining convulsions; afterward, provide guarded care and continued watching."
+      ],
+      "answer_metrics": {
+        "token_f1": 0.22580645161290322,
+        "exact_match": 0.0,
+        "rouge_l": 0.19354838709677416
+      },
+      "citation_metrics": {
+        "citation_count": 3,
+        "citation_present": 1.0,
+        "context_citation_precision": 1.0,
+        "gold_evidence_citation_precision": 0.6666666666666666,
+        "gold_evidence_citation_recall": 1.0,
+        "cited_source_ids": [
+          "46ee6edab6639ac05028a759",
+          "46ee6edab6639ac05028a759",
+          "1ad70ede2f937b917043b2d5"
+        ],
+        "context_source_ids": [
+          "1ad70ede2f937b917043b2d5",
+          "2a0b2bd73d2cce532a2b6011",
+          "46ee6edab6639ac05028a759",
+          "63a88ceae524db2d0646fb98",
+          "63a9608de60cfbf5e4d801ed",
+          "8fc14cdd280c90613e6a535f",
+          "a8cf60d1af1d0d9b2038fc8d",
+          "c1d1e021dd0058cfca2629c0"
+        ],
+        "gold_evidence_source_ids": [
+          "1ad70ede2f937b917043b2d5",
+          "46ee6edab6639ac05028a759"
+        ]
+      },
+      "retrieved_passage_ids": [
+        "T_46ee6edab6639ac05028a759",
+        "T_1ad70ede2f937b917043b2d5",
+        "T_a8cf60d1af1d0d9b2038fc8d",
+        "T_c1d1e021dd0058cfca2629c0",
+        "T_2a0b2bd73d2cce532a2b6011",
+        "T_8fc14cdd280c90613e6a535f",
+        "T_63a88ceae524db2d0646fb98",
+        "T_63a9608de60cfbf5e4d801ed",
+        "T_81bcb590e3df3b34d2dbec1d",
+        "T_1cef357c97ab31231378764d",
+        "T_23754d598e633b74bd00513f",
+        "T_2a9ba1c46e339b96b3825d82",
+        "T_c9f99a16007e8863e46599f3",
+        "T_2485cebe59970c899d29a777",
+        "T_7723d3fc6525a4372527c8bf",
+        "T_6c3ed0f0583234686a14c3c6",
+        "T_ccdfce70e4d53064a3403f8c",
+        "T_bac74dfe3c3b99da2192dedb",
+        "T_6c502e28aee5b51624fe36cc",
+        "T_430fd1a2ade40c791d810561"
+      ],
+      "packed_passage_ids": [
+        "T_46ee6edab6639ac05028a759",
+        "T_1ad70ede2f937b917043b2d5",
+        "T_a8cf60d1af1d0d9b2038fc8d",
+        "T_c1d1e021dd0058cfca2629c0",
+        "T_2a0b2bd73d2cce532a2b6011",
+        "T_8fc14cdd280c90613e6a535f",
+        "T_63a88ceae524db2d0646fb98",
+        "T_63a9608de60cfbf5e4d801ed"
+      ],
+      "packed_context_tokens": 3945,
+      "retrieval_evidence_span_recall@10": 1.0,
+      "retrieval_packed_context_span_recall": 1.0
+    },
+    {
+      "id": "cur-test-020",
+      "question": "What anatomical explanation and warning signs does the manual give for choking?",
+      "category": "multi_evidence_reasoning",
+      "answer": "The manual explains that the throat contains a common passage (the pharynx) that splits into the wind‑pipe (trachea) in front and the oesophagus behind. The epiglottis covers the wind‑pipe opening and normally closes when food is swallowed, preventing food from entering the airway. When a foreign body touches or blocks the wind‑pipe, the person coughs reflexively; if the obstruction is not removed, breathing stops and the face turns dark blue from carbonic acid buildup in the blood.  \n\n**Warning signs of choking**  \n- Immediate distress and violent but ineffective attempts to breathe.  \n- Rapid, dark‑blue discoloration of the face.  \n- Loss of consciousness within minutes if no relief is obtained.  \n\nThese symptoms are cited in the passages describing the anatomy of the throat and the clinical signs of choking. [source=32e3b403139914b440cfe24e] [source=63a9608de60cfbf5e4d801ed]",
+      "references": [
+        "The mouth and nose open into the pharynx. Choking causes immediate distress, ineffective attempts to breathe, and a dark-blue face; without relief, the patient may die within minutes."
+      ],
+      "answer_metrics": {
+        "token_f1": 0.23255813953488372,
+        "exact_match": 0.0,
+        "rouge_l": 0.17054263565891473
+      },
+      "citation_metrics": {
+        "citation_count": 2,
+        "citation_present": 1.0,
+        "context_citation_precision": 1.0,
+        "gold_evidence_citation_precision": 1.0,
+        "gold_evidence_citation_recall": 1.0,
+        "cited_source_ids": [
+          "32e3b403139914b440cfe24e",
+          "63a9608de60cfbf5e4d801ed"
+        ],
+        "context_source_ids": [
+          "0b1e2f858ca8795a6cbeab6d",
+          "23754d598e633b74bd00513f",
+          "2c980b149ea8d3006f5f01d7",
+          "32e3b403139914b440cfe24e",
+          "4b9c32248a472526b5b814e7",
+          "63a9608de60cfbf5e4d801ed",
+          "ebae2ccb8e8d109c3ac92f0d",
+          "fcdc737f469036001961ae70"
+        ],
+        "gold_evidence_source_ids": [
+          "32e3b403139914b440cfe24e",
+          "63a9608de60cfbf5e4d801ed"
+        ]
+      },
+      "retrieved_passage_ids": [
+        "T_63a9608de60cfbf5e4d801ed",
+        "T_32e3b403139914b440cfe24e",
+        "T_23754d598e633b74bd00513f",
+        "T_fcdc737f469036001961ae70",
+        "T_4b9c32248a472526b5b814e7",
+        "T_0b1e2f858ca8795a6cbeab6d",
+        "T_2c980b149ea8d3006f5f01d7",
+        "T_ebae2ccb8e8d109c3ac92f0d",
+        "T_430fd1a2ade40c791d810561",
+        "T_7723d3fc6525a4372527c8bf",
+        "T_073700cda45ad941a402114c",
+        "T_6c502e28aee5b51624fe36cc",
+        "T_3119af000d330c99ef0418b1",
+        "T_91c5a99d0ba38e179284bae8",
+        "T_a40779f0de453bdca0c4e267",
+        "T_96cdd8185b4fad63b719ad04",
+        "T_d35e8481fbc3f65363ef81f0",
+        "T_c9f99a16007e8863e46599f3",
+        "T_1d2a16cadb62219f94d7c089",
+        "T_694f33e7f776f1bad18d25c5"
+      ],
+      "packed_passage_ids": [
+        "T_63a9608de60cfbf5e4d801ed",
+        "T_32e3b403139914b440cfe24e",
+        "T_23754d598e633b74bd00513f",
+        "T_fcdc737f469036001961ae70",
+        "T_4b9c32248a472526b5b814e7",
+        "T_0b1e2f858ca8795a6cbeab6d",
+        "T_2c980b149ea8d3006f5f01d7",
+        "T_ebae2ccb8e8d109c3ac92f0d"
+      ],
+      "packed_context_tokens": 4072,
+      "retrieval_evidence_span_recall@10": 1.0,
+      "retrieval_packed_context_span_recall": 1.0
+    },
+    {
+      "id": "cur-test-021",
+      "question": "Which routes can introduce medicine into the body, and why might patients refuse it?",
+      "category": "multi_evidence_lookup",
+      "answer": "Medicines are introduced into the body through the stomach, lungs, rectum, skin, or by injection into tissues under the skin [source=2e8667b3bad13ea334ce6ca6] [source=9d0c289ecba2157c3a9ac856]. Patients may refuse medicine because they believe they are perfectly well, that the medicine injures them, turns their skin black, poisons them, is morally wrong, or is displeasing to God [source=63a88ceae524db2d0646fb98] [source=754561b88ab9dba6a367959e].",
+      "references": [
+        "Routes include the stomach, lungs, rectum, skin, and injection under the skin; a patient may refuse because they believe they are well or that the medicine will injure them."
+      ],
+      "answer_metrics": {
+        "token_f1": 0.5352112676056338,
+        "exact_match": 0.0,
+        "rouge_l": 0.5070422535211268
+      },
+      "citation_metrics": {
+        "citation_count": 4,
+        "citation_present": 1.0,
+        "context_citation_precision": 1.0,
+        "gold_evidence_citation_precision": 0.5,
+        "gold_evidence_citation_recall": 1.0,
+        "cited_source_ids": [
+          "2e8667b3bad13ea334ce6ca6",
+          "9d0c289ecba2157c3a9ac856",
+          "63a88ceae524db2d0646fb98",
+          "754561b88ab9dba6a367959e"
+        ],
+        "context_source_ids": [
+          "24c282ac8482c163bd62e52b",
+          "2e8667b3bad13ea334ce6ca6",
+          "3119af000d330c99ef0418b1",
+          "4f34f5769fc76bc537fea4d3",
+          "63a88ceae524db2d0646fb98",
+          "754561b88ab9dba6a367959e",
+          "9d0c289ecba2157c3a9ac856",
+          "ccdfce70e4d53064a3403f8c"
+        ],
+        "gold_evidence_source_ids": [
+          "2e8667b3bad13ea334ce6ca6",
+          "63a88ceae524db2d0646fb98"
+        ]
+      },
+      "retrieved_passage_ids": [
+        "T_63a88ceae524db2d0646fb98",
+        "T_754561b88ab9dba6a367959e",
+        "T_4f34f5769fc76bc537fea4d3",
+        "T_2e8667b3bad13ea334ce6ca6",
+        "T_3119af000d330c99ef0418b1",
+        "T_9d0c289ecba2157c3a9ac856",
+        "T_24c282ac8482c163bd62e52b",
+        "T_ccdfce70e4d53064a3403f8c",
+        "T_6c502e28aee5b51624fe36cc",
+        "T_6c3ed0f0583234686a14c3c6",
+        "T_31770bd9d885820fb835609c",
+        "T_8fc14cdd280c90613e6a535f",
+        "T_2485cebe59970c899d29a777",
+        "T_fcdc737f469036001961ae70",
+        "T_4f2b770699243fb89ff66fb2",
+        "T_1d2a16cadb62219f94d7c089",
+        "T_d97a4f11435077577d252505",
+        "T_2679bbd5ed82631813fd1ad2",
+        "T_4b9c32248a472526b5b814e7",
+        "T_81bcb590e3df3b34d2dbec1d"
+      ],
+      "packed_passage_ids": [
+        "T_63a88ceae524db2d0646fb98",
+        "T_754561b88ab9dba6a367959e",
+        "T_4f34f5769fc76bc537fea4d3",
+        "T_2e8667b3bad13ea334ce6ca6",
+        "T_3119af000d330c99ef0418b1",
+        "T_9d0c289ecba2157c3a9ac856",
+        "T_24c282ac8482c163bd62e52b",
+        "T_ccdfce70e4d53064a3403f8c"
+      ],
+      "packed_context_tokens": 4091,
+      "retrieval_evidence_span_recall@10": 1.0,
+      "retrieval_packed_context_span_recall": 1.0
+    },
+    {
+      "id": "cur-test-023",
+      "question": "What care does the manual recommend for severe exhaustion, and which warning signs require reporting?",
+      "category": "multi_evidence_reasoning",
+      "answer": "For patients in severe exhaustion the manual orders **continuous nursing day and night**: they must never be left alone, be given food even by force, kept in bed, covered with clothing and kept clean, fed during the night (especially toward morning), receive hot baths, and be given stimulants or sleep‑producing medicines as directed [ source=4f34f5769fc76bc537fea4d3 ].  \n\nThe attendant must **report immediately** any of these danger signs: partial or complete unconsciousness, slow or labored breathing, rapid, shallow or irregular breathing, increased weakness, rapid heart‑beat or pulse, cold hands and feet, picking at bed‑clothes or imaginary objects, or vacant staring [ source=6c3ed0f0583234686a14c3c6 ].",
+      "references": [
+        "Provide constant nursing day and night, and report unconsciousness, abnormal breathing, a weak or rapid pulse, or cold hands and feet."
+      ],
+      "answer_metrics": {
+        "token_f1": 0.2857142857142857,
+        "exact_match": 0.0,
+        "rouge_l": 0.26785714285714285
+      },
+      "citation_metrics": {
+        "citation_count": 2,
+        "citation_present": 1.0,
+        "context_citation_precision": 1.0,
+        "gold_evidence_citation_precision": 1.0,
+        "gold_evidence_citation_recall": 1.0,
+        "cited_source_ids": [
+          "4f34f5769fc76bc537fea4d3",
+          "6c3ed0f0583234686a14c3c6"
+        ],
+        "context_source_ids": [
+          "27693d463ceddb7dda2c2f08",
+          "2a9ba1c46e339b96b3825d82",
+          "3119af000d330c99ef0418b1",
+          "4f34f5769fc76bc537fea4d3",
+          "6c3ed0f0583234686a14c3c6",
+          "d97a4f11435077577d252505",
+          "fcdc737f469036001961ae70"
+        ],
+        "gold_evidence_source_ids": [
+          "4f34f5769fc76bc537fea4d3",
+          "6c3ed0f0583234686a14c3c6"
+        ]
+      },
+      "retrieved_passage_ids": [
+        "T_6c3ed0f0583234686a14c3c6",
+        "T_4f34f5769fc76bc537fea4d3",
+        "T_fcdc737f469036001961ae70",
+        "T_27693d463ceddb7dda2c2f08",
+        "T_2a9ba1c46e339b96b3825d82",
+        "T_d97a4f11435077577d252505",
+        "T_3119af000d330c99ef0418b1",
+        "T_8d61fe72e8e28762a26614a4",
+        "T_4f2b770699243fb89ff66fb2",
+        "T_0d24254eb7c7a8e3b6b5f48e",
+        "T_a8cf60d1af1d0d9b2038fc8d",
+        "T_96cdd8185b4fad63b719ad04",
+        "T_ebae2ccb8e8d109c3ac92f0d",
+        "T_2a0b2bd73d2cce532a2b6011",
+        "T_6c502e28aee5b51624fe36cc",
+        "T_aa5ea06d0d518b07f7d2a298",
+        "T_8d1e97514702b67a3537ff12",
+        "T_9dc68727c2b4c2f06dcb8b41",
+        "T_7723d3fc6525a4372527c8bf",
+        "T_4b9c32248a472526b5b814e7"
+      ],
+      "packed_passage_ids": [
+        "T_6c3ed0f0583234686a14c3c6",
+        "T_4f34f5769fc76bc537fea4d3",
+        "T_fcdc737f469036001961ae70",
+        "T_27693d463ceddb7dda2c2f08",
+        "T_2a9ba1c46e339b96b3825d82",
+        "T_d97a4f11435077577d252505",
+        "T_3119af000d330c99ef0418b1"
+      ],
+      "packed_context_tokens": 3670,
+      "retrieval_evidence_span_recall@10": 1.0,
+      "retrieval_packed_context_span_recall": 1.0
+    },
+    {
+      "id": "cur-test-024",
+      "question": "What changes in a recovering patient's condition should prompt attendants to report a possible setback?",
+      "category": "single_fact",
+      "answer": "Attendants should report any sign that a recovering patient is slipping back toward illness, such as a return of violent or manic behaviour, a sudden loss of sleep, or any change in health that suggests worsening.  They must also note physical symptoms that indicate sickness—crying, moaning, weakness, lying down, cough, altered respiration, fever signs (flushed or pale face, quick pulse, chills), vomiting, diarrhoea, loss of appetite, or any other change that makes the patient’s enlarged freedom dangerous to themselves or others.  [source=d97a4f11435077577d252505]",
+      "references": [
+        "A return of violent symptoms, failure to sleep, or any change in health should be reported promptly."
+      ],
+      "answer_metrics": {
+        "token_f1": 0.25806451612903225,
+        "exact_match": 0.0,
+        "rouge_l": 0.1935483870967742
+      },
+      "citation_metrics": {
+        "citation_count": 1,
+        "citation_present": 1.0,
+        "context_citation_precision": 1.0,
+        "gold_evidence_citation_precision": 0.0,
+        "gold_evidence_citation_recall": 0.0,
+        "cited_source_ids": [
+          "d97a4f11435077577d252505"
+        ],
+        "context_source_ids": [
+          "2a0b2bd73d2cce532a2b6011",
+          "2a9ba1c46e339b96b3825d82",
+          "754561b88ab9dba6a367959e",
+          "8d61fe72e8e28762a26614a4",
+          "a4e97d003189ecae22d1a13e",
+          "a8cf60d1af1d0d9b2038fc8d",
+          "d97a4f11435077577d252505",
+          "fffa1fccdca51c2d85fe434b"
+        ],
+        "gold_evidence_source_ids": [
+          "fffa1fccdca51c2d85fe434b"
+        ]
+      },
+      "retrieved_passage_ids": [
+        "T_d97a4f11435077577d252505",
+        "T_fffa1fccdca51c2d85fe434b",
+        "T_754561b88ab9dba6a367959e",
+        "T_a8cf60d1af1d0d9b2038fc8d",
+        "T_2a9ba1c46e339b96b3825d82",
+        "T_a4e97d003189ecae22d1a13e",
+        "T_2a0b2bd73d2cce532a2b6011",
+        "T_8d61fe72e8e28762a26614a4",
+        "T_1d2a16cadb62219f94d7c089",
+        "T_363118afb7c29ca7818cfbc2",
+        "T_fcdc737f469036001961ae70",
+        "T_ccdfce70e4d53064a3403f8c",
+        "T_1cf2799c8afa279aef5130f2",
+        "T_d1a748d82b48b3b57e1cc0e3",
+        "T_a5051e3476bd1977ac65243c",
+        "T_ebae2ccb8e8d109c3ac92f0d",
+        "T_d35e8481fbc3f65363ef81f0",
+        "T_8937ba1230e86993f2745cc0",
+        "T_430fd1a2ade40c791d810561",
+        "T_24c282ac8482c163bd62e52b"
+      ],
+      "packed_passage_ids": [
+        "T_d97a4f11435077577d252505",
+        "T_fffa1fccdca51c2d85fe434b",
+        "T_754561b88ab9dba6a367959e",
+        "T_a8cf60d1af1d0d9b2038fc8d",
+        "T_2a9ba1c46e339b96b3825d82",
+        "T_a4e97d003189ecae22d1a13e",
+        "T_2a0b2bd73d2cce532a2b6011",
+        "T_8d61fe72e8e28762a26614a4"
+      ],
+      "packed_context_tokens": 3889,
+      "retrieval_evidence_span_recall@10": 1.0,
+      "retrieval_packed_context_span_recall": 1.0
+    }
+  ]
+}

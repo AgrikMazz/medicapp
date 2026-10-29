@@ -1,0 +1,711 @@
+{
+  "graph_sha256": "f0b9ed825613400d8202b6b6a14031983ce2ca612d638c91bcd978aa826d8230",
+  "question_file_sha256": "0dc8a933203e8f16907ca606120f583b07d2f5ca9602c669cc1fa6866c83398d",
+  "development_ids": [
+    "synthetic-003",
+    "synthetic-004",
+    "synthetic-005",
+    "synthetic-006",
+    "synthetic-007",
+    "synthetic-008",
+    "synthetic-009",
+    "synthetic-010",
+    "synthetic-011",
+    "synthetic-012",
+    "synthetic-013",
+    "synthetic-014",
+    "synthetic-015",
+    "synthetic-016",
+    "synthetic-017",
+    "synthetic-018",
+    "synthetic-020",
+    "synthetic-021",
+    "synthetic-022",
+    "synthetic-023",
+    "synthetic-024",
+    "cur-dev-001",
+    "cur-dev-002",
+    "cur-dev-003",
+    "cur-dev-004",
+    "cur-dev-005",
+    "cur-dev-006",
+    "cur-dev-007",
+    "cur-dev-008",
+    "cur-dev-009",
+    "cur-dev-010",
+    "cur-dev-011",
+    "cur-dev-012",
+    "cur-dev-013",
+    "cur-dev-014",
+    "cur-dev-015",
+    "cur-dev-016"
+  ],
+  "purpose": "Align-GRAG development supervision; held-out answers are not used.",
+  "provider_runtime": {
+    "configured_models": [
+      "openai/gpt-oss-120b",
+      "openai/gpt-oss-20b",
+      "qwen/qwen3.8-27b",
+      "openai/gpt-oss-120b",
+      "openai/gpt-oss-20b",
+      "qwen/qwen3.8-27b"
+    ],
+    "configured_key_slots": [
+      "GROQ_API_KEY",
+      "GROQ_API_KEY_2"
+    ],
+    "last_successful_model": null,
+    "last_successful_key_slot": null,
+    "fallback_events": [
+      {
+        "key_slot": "GROQ_API_KEY",
+        "model": "openai/gpt-oss-120b",
+        "http_status": 413,
+        "error_type": "rate_limit_exceeded"
+      },
+      {
+        "key_slot": "GROQ_API_KEY",
+        "model": "openai/gpt-oss-20b",
+        "http_status": 413,
+        "error_type": "rate_limit_exceeded"
+      },
+      {
+        "key_slot": "GROQ_API_KEY",
+        "model": "qwen/qwen3.8-27b",
+        "http_status": 413,
+        "error_type": "rate_limit_exceeded"
+      },
+      {
+        "key_slot": "GROQ_API_KEY_2",
+        "model": "openai/gpt-oss-120b",
+        "http_status": 413,
+        "error_type": "rate_limit_exceeded"
+      },
+      {
+        "key_slot": "GROQ_API_KEY_2",
+        "model": "openai/gpt-oss-20b",
+        "http_status": 413,
+        "error_type": "rate_limit_exceeded"
+      },
+      {
+        "key_slot": "GROQ_API_KEY_2",
+        "model": "qwen/qwen3.8-27b",
+        "http_status": 413,
+        "error_type": "rate_limit_exceeded"
+      },
+      {
+        "key_slot": "GROQ_API_KEY",
+        "model": "openai/gpt-oss-120b",
+        "http_status": 413,
+        "error_type": "rate_limit_exceeded"
+      },
+      {
+        "key_slot": "GROQ_API_KEY",
+        "model": "openai/gpt-oss-20b",
+        "http_status": 413,
+        "error_type": "rate_limit_exceeded"
+      },
+      {
+        "key_slot": "GROQ_API_KEY",
+        "model": "qwen/qwen3.8-27b",
+        "http_status": 413,
+        "error_type": "rate_limit_exceeded"
+      },
+      {
+        "key_slot": "GROQ_API_KEY_2",
+        "model": "openai/gpt-oss-120b",
+        "http_status": 413,
+        "error_type": "rate_limit_exceeded"
+      },
+      {
+        "key_slot": "GROQ_API_KEY_2",
+        "model": "openai/gpt-oss-20b",
+        "http_status": 413,
+        "error_type": "rate_limit_exceeded"
+      },
+      {
+        "key_slot": "GROQ_API_KEY_2",
+        "model": "qwen/qwen3.8-27b",
+        "http_status": 413,
+        "error_type": "rate_limit_exceeded"
+      },
+      {
+        "key_slot": "GROQ_API_KEY",
+        "model": "openai/gpt-oss-120b",
+        "http_status": 413,
+        "error_type": "rate_limit_exceeded"
+      },
+      {
+        "key_slot": "GROQ_API_KEY",
+        "model": "openai/gpt-oss-20b",
+        "http_status": 413,
+        "error_type": "rate_limit_exceeded"
+      },
+      {
+        "key_slot": "GROQ_API_KEY",
+        "model": "qwen/qwen3.8-27b",
+        "http_status": 413,
+        "error_type": "rate_limit_exceeded"
+      },
+      {
+        "key_slot": "GROQ_API_KEY_2",
+        "model": "openai/gpt-oss-120b",
+        "http_status": 413,
+        "error_type": "rate_limit_exceeded"
+      },
+      {
+        "key_slot": "GROQ_API_KEY_2",
+        "model": "openai/gpt-oss-20b",
+        "http_status": 413,
+        "error_type": "rate_limit_exceeded"
+      },
+      {
+        "key_slot": "GROQ_API_KEY_2",
+        "model": "qwen/qwen3.8-27b",
+        "http_status": 413,
+        "error_type": "rate_limit_exceeded"
+      },
+      {
+        "key_slot": "GROQ_API_KEY",
+        "model": "openai/gpt-oss-120b",
+        "http_status": 413,
+        "error_type": "rate_limit_exceeded"
+      },
+      {
+        "key_slot": "GROQ_API_KEY",
+        "model": "openai/gpt-oss-20b",
+        "http_status": 413,
+        "error_type": "rate_limit_exceeded"
+      },
+      {
+        "key_slot": "GROQ_API_KEY",
+        "model": "qwen/qwen3.8-27b",
+        "http_status": 413,
+        "error_type": "rate_limit_exceeded"
+      },
+      {
+        "key_slot": "GROQ_API_KEY_2",
+        "model": "openai/gpt-oss-120b",
+        "http_status": 413,
+        "error_type": "rate_limit_exceeded"
+      },
+      {
+        "key_slot": "GROQ_API_KEY_2",
+        "model": "openai/gpt-oss-20b",
+        "http_status": 413,
+        "error_type": "rate_limit_exceeded"
+      },
+      {
+        "key_slot": "GROQ_API_KEY_2",
+        "model": "qwen/qwen3.8-27b",
+        "http_status": 413,
+        "error_type": "rate_limit_exceeded"
+      },
+      {
+        "key_slot": "GROQ_API_KEY",
+        "model": "openai/gpt-oss-120b",
+        "http_status": 413,
+        "error_type": "rate_limit_exceeded"
+      },
+      {
+        "key_slot": "GROQ_API_KEY",
+        "model": "openai/gpt-oss-20b",
+        "http_status": 413,
+        "error_type": "rate_limit_exceeded"
+      },
+      {
+        "key_slot": "GROQ_API_KEY",
+        "model": "qwen/qwen3.8-27b",
+        "http_status": 413,
+        "error_type": "rate_limit_exceeded"
+      },
+      {
+        "key_slot": "GROQ_API_KEY_2",
+        "model": "openai/gpt-oss-120b",
+        "http_status": 413,
+        "error_type": "rate_limit_exceeded"
+      },
+      {
+        "key_slot": "GROQ_API_KEY_2",
+        "model": "openai/gpt-oss-20b",
+        "http_status": 413,
+        "error_type": "rate_limit_exceeded"
+      },
+      {
+        "key_slot": "GROQ_API_KEY_2",
+        "model": "qwen/qwen3.8-27b",
+        "http_status": 413,
+        "error_type": "rate_limit_exceeded"
+      },
+      {
+        "key_slot": "GROQ_API_KEY",
+        "model": "openai/gpt-oss-120b",
+        "http_status": 413,
+        "error_type": "rate_limit_exceeded"
+      },
+      {
+        "key_slot": "GROQ_API_KEY",
+        "model": "openai/gpt-oss-20b",
+        "http_status": 413,
+        "error_type": "rate_limit_exceeded"
+      },
+      {
+        "key_slot": "GROQ_API_KEY",
+        "model": "qwen/qwen3.8-27b",
+        "http_status": 413,
+        "error_type": "rate_limit_exceeded"
+      },
+      {
+        "key_slot": "GROQ_API_KEY_2",
+        "model": "openai/gpt-oss-120b",
+        "http_status": 413,
+        "error_type": "rate_limit_exceeded"
+      },
+      {
+        "key_slot": "GROQ_API_KEY_2",
+        "model": "openai/gpt-oss-20b",
+        "http_status": 413,
+        "error_type": "rate_limit_exceeded"
+      },
+      {
+        "key_slot": "GROQ_API_KEY_2",
+        "model": "qwen/qwen3.8-27b",
+        "http_status": 413,
+        "error_type": "rate_limit_exceeded"
+      },
+      {
+        "key_slot": "GROQ_API_KEY",
+        "model": "openai/gpt-oss-120b",
+        "http_status": 413,
+        "error_type": "rate_limit_exceeded"
+      },
+      {
+        "key_slot": "GROQ_API_KEY",
+        "model": "openai/gpt-oss-20b",
+        "http_status": 413,
+        "error_type": "rate_limit_exceeded"
+      },
+      {
+        "key_slot": "GROQ_API_KEY",
+        "model": "qwen/qwen3.8-27b",
+        "http_status": 413,
+        "error_type": "rate_limit_exceeded"
+      },
+      {
+        "key_slot": "GROQ_API_KEY_2",
+        "model": "openai/gpt-oss-120b",
+        "http_status": 413,
+        "error_type": "rate_limit_exceeded"
+      },
+      {
+        "key_slot": "GROQ_API_KEY_2",
+        "model": "openai/gpt-oss-20b",
+        "http_status": 413,
+        "error_type": "rate_limit_exceeded"
+      },
+      {
+        "key_slot": "GROQ_API_KEY_2",
+        "model": "qwen/qwen3.8-27b",
+        "http_status": 413,
+        "error_type": "rate_limit_exceeded"
+      },
+      {
+        "key_slot": "GROQ_API_KEY",
+        "model": "openai/gpt-oss-120b",
+        "http_status": 413,
+        "error_type": "rate_limit_exceeded"
+      },
+      {
+        "key_slot": "GROQ_API_KEY",
+        "model": "openai/gpt-oss-20b",
+        "http_status": 413,
+        "error_type": "rate_limit_exceeded"
+      },
+      {
+        "key_slot": "GROQ_API_KEY",
+        "model": "qwen/qwen3.8-27b",
+        "http_status": 413,
+        "error_type": "rate_limit_exceeded"
+      },
+      {
+        "key_slot": "GROQ_API_KEY_2",
+        "model": "openai/gpt-oss-120b",
+        "http_status": 413,
+        "error_type": "rate_limit_exceeded"
+      },
+      {
+        "key_slot": "GROQ_API_KEY_2",
+        "model": "openai/gpt-oss-20b",
+        "http_status": 413,
+        "error_type": "rate_limit_exceeded"
+      },
+      {
+        "key_slot": "GROQ_API_KEY_2",
+        "model": "qwen/qwen3.8-27b",
+        "http_status": 413,
+        "error_type": "rate_limit_exceeded"
+      },
+      {
+        "key_slot": "GROQ_API_KEY",
+        "model": "openai/gpt-oss-120b",
+        "http_status": 413,
+        "error_type": "rate_limit_exceeded"
+      },
+      {
+        "key_slot": "GROQ_API_KEY",
+        "model": "openai/gpt-oss-20b",
+        "http_status": 413,
+        "error_type": "rate_limit_exceeded"
+      },
+      {
+        "key_slot": "GROQ_API_KEY",
+        "model": "qwen/qwen3.8-27b",
+        "http_status": 413,
+        "error_type": "rate_limit_exceeded"
+      },
+      {
+        "key_slot": "GROQ_API_KEY_2",
+        "model": "openai/gpt-oss-120b",
+        "http_status": 413,
+        "error_type": "rate_limit_exceeded"
+      },
+      {
+        "key_slot": "GROQ_API_KEY_2",
+        "model": "openai/gpt-oss-20b",
+        "http_status": 413,
+        "error_type": "rate_limit_exceeded"
+      },
+      {
+        "key_slot": "GROQ_API_KEY_2",
+        "model": "qwen/qwen3.8-27b",
+        "http_status": 413,
+        "error_type": "rate_limit_exceeded"
+      },
+      {
+        "key_slot": "GROQ_API_KEY",
+        "model": "openai/gpt-oss-120b",
+        "http_status": 413,
+        "error_type": "rate_limit_exceeded"
+      },
+      {
+        "key_slot": "GROQ_API_KEY",
+        "model": "openai/gpt-oss-20b",
+        "http_status": 413,
+        "error_type": "rate_limit_exceeded"
+      },
+      {
+        "key_slot": "GROQ_API_KEY",
+        "model": "qwen/qwen3.8-27b",
+        "http_status": 413,
+        "error_type": "rate_limit_exceeded"
+      },
+      {
+        "key_slot": "GROQ_API_KEY_2",
+        "model": "openai/gpt-oss-120b",
+        "http_status": 413,
+        "error_type": "rate_limit_exceeded"
+      },
+      {
+        "key_slot": "GROQ_API_KEY_2",
+        "model": "openai/gpt-oss-20b",
+        "http_status": 413,
+        "error_type": "rate_limit_exceeded"
+      },
+      {
+        "key_slot": "GROQ_API_KEY_2",
+        "model": "qwen/qwen3.8-27b",
+        "http_status": 413,
+        "error_type": "rate_limit_exceeded"
+      },
+      {
+        "key_slot": "GROQ_API_KEY",
+        "model": "openai/gpt-oss-120b",
+        "http_status": 413,
+        "error_type": "rate_limit_exceeded"
+      },
+      {
+        "key_slot": "GROQ_API_KEY",
+        "model": "openai/gpt-oss-20b",
+        "http_status": 413,
+        "error_type": "rate_limit_exceeded"
+      },
+      {
+        "key_slot": "GROQ_API_KEY",
+        "model": "qwen/qwen3.8-27b",
+        "http_status": 413,
+        "error_type": "rate_limit_exceeded"
+      },
+      {
+        "key_slot": "GROQ_API_KEY_2",
+        "model": "openai/gpt-oss-120b",
+        "http_status": 413,
+        "error_type": "rate_limit_exceeded"
+      },
+      {
+        "key_slot": "GROQ_API_KEY_2",
+        "model": "openai/gpt-oss-20b",
+        "http_status": 413,
+        "error_type": "rate_limit_exceeded"
+      },
+      {
+        "key_slot": "GROQ_API_KEY_2",
+        "model": "qwen/qwen3.8-27b",
+        "http_status": 413,
+        "error_type": "rate_limit_exceeded"
+      },
+      {
+        "key_slot": "GROQ_API_KEY",
+        "model": "openai/gpt-oss-120b",
+        "http_status": 413,
+        "error_type": "rate_limit_exceeded"
+      },
+      {
+        "key_slot": "GROQ_API_KEY",
+        "model": "openai/gpt-oss-20b",
+        "http_status": 413,
+        "error_type": "rate_limit_exceeded"
+      },
+      {
+        "key_slot": "GROQ_API_KEY",
+        "model": "qwen/qwen3.8-27b",
+        "http_status": 413,
+        "error_type": "rate_limit_exceeded"
+      },
+      {
+        "key_slot": "GROQ_API_KEY_2",
+        "model": "openai/gpt-oss-120b",
+        "http_status": 413,
+        "error_type": "rate_limit_exceeded"
+      },
+      {
+        "key_slot": "GROQ_API_KEY_2",
+        "model": "openai/gpt-oss-20b",
+        "http_status": 413,
+        "error_type": "rate_limit_exceeded"
+      },
+      {
+        "key_slot": "GROQ_API_KEY_2",
+        "model": "qwen/qwen3.8-27b",
+        "http_status": 413,
+        "error_type": "rate_limit_exceeded"
+      },
+      {
+        "key_slot": "GROQ_API_KEY",
+        "model": "openai/gpt-oss-120b",
+        "http_status": 413,
+        "error_type": "rate_limit_exceeded"
+      },
+      {
+        "key_slot": "GROQ_API_KEY",
+        "model": "openai/gpt-oss-20b",
+        "http_status": 413,
+        "error_type": "rate_limit_exceeded"
+      },
+      {
+        "key_slot": "GROQ_API_KEY",
+        "model": "qwen/qwen3.8-27b",
+        "http_status": 413,
+        "error_type": "rate_limit_exceeded"
+      },
+      {
+        "key_slot": "GROQ_API_KEY_2",
+        "model": "openai/gpt-oss-120b",
+        "http_status": 413,
+        "error_type": "rate_limit_exceeded"
+      },
+      {
+        "key_slot": "GROQ_API_KEY_2",
+        "model": "openai/gpt-oss-20b",
+        "http_status": 413,
+        "error_type": "rate_limit_exceeded"
+      },
+      {
+        "key_slot": "GROQ_API_KEY_2",
+        "model": "qwen/qwen3.8-27b",
+        "http_status": 413,
+        "error_type": "rate_limit_exceeded"
+      },
+      {
+        "key_slot": "GROQ_API_KEY",
+        "model": "openai/gpt-oss-120b",
+        "http_status": 413,
+        "error_type": "rate_limit_exceeded"
+      },
+      {
+        "key_slot": "GROQ_API_KEY",
+        "model": "openai/gpt-oss-20b",
+        "http_status": 413,
+        "error_type": "rate_limit_exceeded"
+      },
+      {
+        "key_slot": "GROQ_API_KEY",
+        "model": "qwen/qwen3.8-27b",
+        "http_status": 413,
+        "error_type": "rate_limit_exceeded"
+      },
+      {
+        "key_slot": "GROQ_API_KEY_2",
+        "model": "openai/gpt-oss-120b",
+        "http_status": 413,
+        "error_type": "rate_limit_exceeded"
+      },
+      {
+        "key_slot": "GROQ_API_KEY_2",
+        "model": "openai/gpt-oss-20b",
+        "http_status": 413,
+        "error_type": "rate_limit_exceeded"
+      },
+      {
+        "key_slot": "GROQ_API_KEY_2",
+        "model": "qwen/qwen3.8-27b",
+        "http_status": 413,
+        "error_type": "rate_limit_exceeded"
+      },
+      {
+        "key_slot": "GROQ_API_KEY",
+        "model": "openai/gpt-oss-120b",
+        "http_status": 413,
+        "error_type": "rate_limit_exceeded"
+      },
+      {
+        "key_slot": "GROQ_API_KEY",
+        "model": "openai/gpt-oss-20b",
+        "http_status": 413,
+        "error_type": "rate_limit_exceeded"
+      },
+      {
+        "key_slot": "GROQ_API_KEY",
+        "model": "qwen/qwen3.8-27b",
+        "http_status": 413,
+        "error_type": "rate_limit_exceeded"
+      },
+      {
+        "key_slot": "GROQ_API_KEY_2",
+        "model": "openai/gpt-oss-120b",
+        "http_status": 413,
+        "error_type": "rate_limit_exceeded"
+      },
+      {
+        "key_slot": "GROQ_API_KEY_2",
+        "model": "openai/gpt-oss-20b",
+        "http_status": 413,
+        "error_type": "rate_limit_exceeded"
+      },
+      {
+        "key_slot": "GROQ_API_KEY_2",
+        "model": "qwen/qwen3.8-27b",
+        "http_status": 413,
+        "error_type": "rate_limit_exceeded"
+      },
+      {
+        "key_slot": "GROQ_API_KEY",
+        "model": "openai/gpt-oss-120b",
+        "http_status": 413,
+        "error_type": "rate_limit_exceeded"
+      },
+      {
+        "key_slot": "GROQ_API_KEY",
+        "model": "openai/gpt-oss-20b",
+        "http_status": 413,
+        "error_type": "rate_limit_exceeded"
+      },
+      {
+        "key_slot": "GROQ_API_KEY",
+        "model": "qwen/qwen3.8-27b",
+        "http_status": 413,
+        "error_type": "rate_limit_exceeded"
+      },
+      {
+        "key_slot": "GROQ_API_KEY_2",
+        "model": "openai/gpt-oss-120b",
+        "http_status": 413,
+        "error_type": "rate_limit_exceeded"
+      },
+      {
+        "key_slot": "GROQ_API_KEY_2",
+        "model": "openai/gpt-oss-20b",
+        "http_status": 413,
+        "error_type": "rate_limit_exceeded"
+      },
+      {
+        "key_slot": "GROQ_API_KEY_2",
+        "model": "qwen/qwen3.8-27b",
+        "http_status": 413,
+        "error_type": "rate_limit_exceeded"
+      },
+      {
+        "key_slot": "GROQ_API_KEY",
+        "model": "openai/gpt-oss-120b",
+        "http_status": 413,
+        "error_type": "rate_limit_exceeded"
+      },
+      {
+        "key_slot": "GROQ_API_KEY",
+        "model": "openai/gpt-oss-20b",
+        "http_status": 413,
+        "error_type": "rate_limit_exceeded"
+      },
+      {
+        "key_slot": "GROQ_API_KEY",
+        "model": "qwen/qwen3.8-27b",
+        "http_status": 413,
+        "error_type": "rate_limit_exceeded"
+      },
+      {
+        "key_slot": "GROQ_API_KEY_2",
+        "model": "openai/gpt-oss-120b",
+        "http_status": 413,
+        "error_type": "rate_limit_exceeded"
+      },
+      {
+        "key_slot": "GROQ_API_KEY_2",
+        "model": "openai/gpt-oss-20b",
+        "http_status": 413,
+        "error_type": "rate_limit_exceeded"
+      },
+      {
+        "key_slot": "GROQ_API_KEY_2",
+        "model": "qwen/qwen3.8-27b",
+        "http_status": 413,
+        "error_type": "rate_limit_exceeded"
+      },
+      {
+        "key_slot": "GROQ_API_KEY",
+        "model": "openai/gpt-oss-120b",
+        "http_status": 413,
+        "error_type": "rate_limit_exceeded"
+      },
+      {
+        "key_slot": "GROQ_API_KEY",
+        "model": "openai/gpt-oss-20b",
+        "http_status": 413,
+        "error_type": "rate_limit_exceeded"
+      },
+      {
+        "key_slot": "GROQ_API_KEY",
+        "model": "qwen/qwen3.8-27b",
+        "http_status": 413,
+        "error_type": "rate_limit_exceeded"
+      },
+      {
+        "key_slot": "GROQ_API_KEY_2",
+        "model": "openai/gpt-oss-120b",
+        "http_status": 413,
+        "error_type": "rate_limit_exceeded"
+      },
+      {
+        "key_slot": "GROQ_API_KEY_2",
+        "model": "openai/gpt-oss-20b",
+        "http_status": 413,
+        "error_type": "rate_limit_exceeded"
+      },
+      {
+        "key_slot": "GROQ_API_KEY_2",
+        "model": "qwen/qwen3.8-27b",
+        "http_status": 413,
+        "error_type": "rate_limit_exceeded"
+      }
+    ],
+    "usage_by_model": {}
+  }
+}

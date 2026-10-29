@@ -2,11 +2,9 @@ import os
 import time
 import json
 import jsonlines
-from groq_handler import GroqHandler
-from graph_builder import GraphBuilder
-from generator import GraphAugmentedGenerator
-
-pdf_path="docs\medbook1\medical_book.pdf"
+from .groq_handler import GroqHandler
+from .graph_builder import GraphBuilder
+from .generator import GraphAugmentedGenerator
 
 class EntityHandler:
     def __init__(self, groq_handler: GroqHandler, graph_builder: GraphBuilder, generator: GraphAugmentedGenerator, batch_size=8, wait_time=60,
@@ -31,6 +29,14 @@ class EntityHandler:
         self.max_retries = max_retries
         self.processed_count = 0
         self.Entity_Unprocessed_elements = []
+
+    def _checkpoint_paths(self, type, max_retries):
+        directory = os.path.dirname(self.progress_file) or "."
+        os.makedirs(directory, exist_ok=True)
+        return [
+            os.path.join(directory, f"{self.progress_file_name}-{type}-{index}.json")
+            for index in range(1, max_retries + 1)
+        ]
 
     def process_documents(self, type: str, start_index=0):
         self.load_progress(type)
@@ -59,6 +65,10 @@ class EntityHandler:
                             if not query:
                                 print(f"⚠️ No query found in {doc_id}")
                                 self.Entity_Unprocessed_elements.append({"doc_id": doc_id, "type": type})
+                                continue
+
+                            result_key = "reasoning_chain" if type == "reasoning_chain" else "answer"
+                            if content.get(result_key):
                                 continue
 
                             if type == "reasoning_chain":
@@ -125,6 +135,9 @@ class EntityHandler:
                     for doc_id in batch_doc_ids:
                         content = json_data[doc_id]
                         try:
+                            result_key = "HL_summary" if type == "HL_summary" else "title"
+                            if content.get(result_key):
+                                continue
                             if type == "HL_summary":
                                 context_lines = content.get("summary_texts", []) + content.get("relation_texts", [])
                                 if not context_lines:
@@ -190,6 +203,10 @@ class EntityHandler:
                                 print(f"Skipping due to missing text or doc_id: {chunk}")
                                 continue
 
+                            result_key = {"entity": "entities", "summary": "summary", "relationship": "relations"}[type]
+                            if result_key in chunk:
+                                continue
+
                             if type == "entity":
                                 result = self.groq_handler.extract_entities(text_chunk)
                                 key = "entities"
@@ -201,12 +218,10 @@ class EntityHandler:
                             elif type == "relationship":
                                 entity_list = chunk.get("entities")
                                 if not entity_list:
-                                    print(f"⚠️ No entities in chunk for relationship extraction (doc_id={doc_id}). Skipping.")
-                                    self.Entity_Unprocessed_elements.append({
-                                        "doc_id": doc_id,
-                                        "text_chunk": text_chunk,
-                                        "type": type
-                                    })
+                                    # Empty entity extraction is valid and cannot form a relation.
+                                    chunk["relations"] = []
+                                    with jsonlines.open(self.store_file, mode='w') as writer:
+                                        writer.write_all(jsonl_data)
                                     continue
                                 result = self.groq_handler.extract_relations(text_chunk, entity_list)
                                 key = "relations"
@@ -214,7 +229,8 @@ class EntityHandler:
                             else:
                                 raise ValueError(f"Unsupported type: {type}")
 
-                            if not result:
+                            extraction_can_be_empty = type in {"entity", "relationship"} and isinstance(result, list)
+                            if result is None or (not result and not extraction_can_be_empty):
                                 self.Entity_Unprocessed_elements.append({
                                     "doc_id": doc_id,
                                     "text_chunk": text_chunk,
@@ -249,7 +265,7 @@ class EntityHandler:
 
         if type in {"reasoning_chain", "answer"}:
             data_file = self.eval_dump_file
-            checkpoint_files = [f"data/{self.progress_file_name}-{type}-{i}.json" for i in range(1, max_retries + 1)]
+            checkpoint_files = self._checkpoint_paths(type, max_retries)
 
             try:
                 with open(data_file, "r", encoding="utf-8") as f:
@@ -275,6 +291,10 @@ class EntityHandler:
                         content = json_data.get(doc_id)
                         if not content:
                             print(f"⚠️ Document ID {doc_id} not found in eval_dump.")
+                            continue
+
+                        result_key = "HL_summary" if type == "HL_summary" else "title"
+                        if content.get(result_key):
                             continue
 
                         try:
@@ -335,7 +355,7 @@ class EntityHandler:
 
         if type in {"HL_summary", "title"}:
             data_file = self.community_file
-            checkpoint_files = [f"data/{self.progress_file_name}-{type}-{i}.json" for i in range(1, max_retries + 1)]
+            checkpoint_files = self._checkpoint_paths(type, max_retries)
 
             try:
                 with open(data_file, "r", encoding="utf-8") as f:
@@ -413,7 +433,7 @@ class EntityHandler:
 
         elif type in {"entity", "summary", "relationship"}:
             store_file = self.store_file
-            checkpoint_files = [f"data/ProgressCheckpoint-{type}-{i}.json" for i in range(1, max_retries + 1)]
+            checkpoint_files = self._checkpoint_paths(type, max_retries)
 
             with jsonlines.open(store_file, mode='r') as reader:
                 jsonl_data = list(reader)
@@ -437,6 +457,10 @@ class EntityHandler:
                         print(f"⚠️ Document ID {doc_id} not found in JSONL.")
                         continue
 
+                    result_key = {"entity": "entities", "summary": "summary", "relationship": "relations"}[type]
+                    if result_key in chunk:
+                        continue
+
                     try:
                         text_chunk = chunk.get("text")
                         if not text_chunk:
@@ -453,15 +477,15 @@ class EntityHandler:
                         elif type == "relationship":
                             entity_list = chunk.get("entities")
                             if not entity_list:
-                                print(f"⚠️ No entities in JSONL for {doc_id}. Skipping.")
-                                retried_elements.append(item)
-                                continue
-                            result = self.groq_handler.extract_relations(text_chunk, entity_list)
+                                result = []
+                            else:
+                                result = self.groq_handler.extract_relations(text_chunk, entity_list)
                             key = "relations"
                         else:
                             raise ValueError(f"Unsupported type: {type}")
 
-                        if not result:
+                        extraction_can_be_empty = type in {"entity", "relationship"} and isinstance(result, list)
+                        if result is None or (not result and not extraction_can_be_empty):
                             retried_elements.append(item)
                             print(f"⚠️ Retry {retry_idx + 1}: Document {doc_id} still failed.")
                             continue

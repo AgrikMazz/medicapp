@@ -1,0 +1,237 @@
+{
+  "summary": {
+    "abstained": 1.0,
+    "all_evidence_pages_in_final_context": 1.0,
+    "all_evidence_pages_retrieved": 1.0,
+    "bleu_1": 0.33257791204522513,
+    "bleu_1_smooth": 0.33257791204522513,
+    "bleu_4": 0.10119344266320698,
+    "bleu_4_smooth": 0.104236064075373,
+    "citation_page_precision": 1.0,
+    "citation_page_recall": 1.0,
+    "evidence_page_recall": 1.0,
+    "exact_match": 0.0,
+    "f1": 0.4002824133504493,
+    "final_context_page_recall": 1.0,
+    "meteor": 0.3562158599131138,
+    "precision": 0.3612061982887026,
+    "recall": 0.4713149753472334,
+    "rouge_l": 0.35296552927809777
+  },
+  "predictions": [
+    {
+      "f1": 0.5263157894736842,
+      "precision": 0.4838709677419355,
+      "recall": 0.5769230769230769,
+      "exact_match": 0,
+      "bleu_1": 0.3684210526315789,
+      "bleu_4": 0.23378464993796916,
+      "bleu_1_smooth": 0.3684210526315789,
+      "bleu_4_smooth": 0.23378464993796916,
+      "meteor": 0.4825367647058824,
+      "rouge_l": 0.4285714237308674,
+      "evidence_page_recall": 1.0,
+      "all_evidence_pages_retrieved": 1.0,
+      "final_context_page_recall": 1.0,
+      "all_evidence_pages_in_final_context": 1.0,
+      "citation_page_precision": 1.0,
+      "citation_page_recall": 1.0,
+      "id": "mb-q1",
+      "question": "What reduction in clinical malaria incidence did the report attribute to IPTi-SP, and through what follow-up period was that estimate observed?",
+      "prediction": "The report attributed a 20–30 % reduction in clinical malaria incidence to IPTi‑SP. This estimate was observed over a follow‑up period that extended from the first dose until 5 months and 5 weeks after the last dose【T | source=b468f8cf1138a9d742f3c324 | p. 3】.",
+      "answers": [
+        "IPTi-SP reduced clinical malaria episodes by approximately 20–30 percent. Infants were followed from their first dose until 5 months and 5 weeks after their last dose."
+      ],
+      "gold_pages": [
+        3
+      ],
+      "retrieved_pages": [
+        3,
+        10,
+        11,
+        12,
+        13,
+        18
+      ],
+      "final_context_pages": [
+        3,
+        10,
+        11,
+        12,
+        13,
+        18
+      ]
+    },
+    {
+      "f1": 0.31999999999999995,
+      "precision": 0.2318840579710145,
+      "recall": 0.5161290322580645,
+      "exact_match": 0,
+      "bleu_1": 0.21333333333333335,
+      "bleu_4": 4.888143685998743e-155,
+      "bleu_1_smooth": 0.21333333333333335,
+      "bleu_4_smooth": 0.012170485648664011,
+      "meteor": 0.25917914944903586,
+      "rouge_l": 0.2608695609002836,
+      "evidence_page_recall": 1.0,
+      "all_evidence_pages_retrieved": 1.0,
+      "final_context_page_recall": 1.0,
+      "all_evidence_pages_in_final_context": 1.0,
+      "citation_page_precision": 1.0,
+      "citation_page_recall": 1.0,
+      "id": "mb-q2",
+      "question": "If IPTi-SP were implemented, which settings did the committee recommend targeting first, and why?",
+      "prediction": "The committee advised that IPTi‑SP first be rolled out in perennial, high‑ or moderate‑intensity malaria transmission areas of sub‑Saharan Africa where sulfadoxine‑pyrimethamine resistance is low, to achieve the greatest public‑health impact. This focus is because the pooled data show a 20–30 % reduction in clinical malaria in such settings, and because implementing IPTi‑SP in these high‑burden areas would provide the most benefit while allowing monitoring of safety, effectiveness, cost‑effectiveness, and resistance patterns during pilot projects. [p. 4]",
+      "answers": [
+        "The report recommends beginning in perennial areas of high or moderate malaria transmission in sub-Saharan Africa where infant disease burden is high and SP resistance is not high, to maximize public-health impact."
+      ],
+      "gold_pages": [
+        4
+      ],
+      "retrieved_pages": [
+        3,
+        4,
+        11,
+        12,
+        18
+      ],
+      "final_context_pages": [
+        3,
+        4,
+        11,
+        12,
+        18
+      ]
+    },
+    {
+      "f1": 0.31578947368421056,
+      "precision": 0.27906976744186046,
+      "recall": 0.36363636363636365,
+      "exact_match": 0,
+      "bleu_1": 0.27835051546391754,
+      "bleu_4": 0.04442860181087635,
+      "bleu_1_smooth": 0.27835051546391754,
+      "bleu_4_smooth": 0.04442860181087635,
+      "meteor": 0.25966265246469056,
+      "rouge_l": 0.27536231394559973,
+      "evidence_page_recall": 1.0,
+      "all_evidence_pages_retrieved": 1.0,
+      "final_context_page_recall": 1.0,
+      "all_evidence_pages_in_final_context": 1.0,
+      "citation_page_precision": 1.0,
+      "citation_page_recall": 1.0,
+      "id": "mb-q3",
+      "question": "How did the committee recommend comparing IPTi-SP efficacy after treatment, what follow-up duration did it suggest, and what rebound concern from continuous chemoprophylaxis motivated this?",
+      "prediction": "The committee advised that IPTi‑SP efficacy be assessed by comparing the SP group with a placebo group from randomisation **throughout the dosing period and for a follow‑up period of roughly the same length as the drug’s active duration** – about 7½ months after the last dose – to capture any rebound effect [p. 18]. This recommendation was driven by evidence from continuous chemoprophylaxis trials (e.g., Menendez et al., 1997) that showed a **post‑cessation rebound of clinical malaria** when prophylaxis was stopped, indicating that prolonged drug coverage can delay immunity acquisition and raise malaria risk after treatment ends [p. 12].",
+      "answers": [
+        "The report recommends comparing IPTi-SP and placebo from randomization through several months after treatment ends, analyzing the intervention and follow-up periods to capture time-varying protection and possible rebound. A reasonable follow-up target is about as long as the period under the influence of SP—for example, 7.5 months after the last dose—with the target varying by transmission intensity. Continuous chemoprophylaxis may delay naturally acquired immunity and lead to higher malaria rates after treatment stops."
+      ],
+      "gold_pages": [
+        12,
+        18
+      ],
+      "retrieved_pages": [
+        3,
+        4,
+        10,
+        11,
+        12,
+        13,
+        18
+      ],
+      "final_context_pages": [
+        3,
+        4,
+        10,
+        11,
+        12,
+        13,
+        18
+      ]
+    },
+    {
+      "f1": 0.4390243902439024,
+      "precision": 0.45,
+      "recall": 0.42857142857142855,
+      "exact_match": 0,
+      "bleu_1": 0.4702067467520707,
+      "bleu_4": 0.12656051890398248,
+      "bleu_1_smooth": 0.4702067467520707,
+      "bleu_4_smooth": 0.12656051890398248,
+      "meteor": 0.4234848730328462,
+      "rouge_l": 0.4470588185356402,
+      "evidence_page_recall": 1.0,
+      "all_evidence_pages_retrieved": 1.0,
+      "final_context_page_recall": 1.0,
+      "all_evidence_pages_in_final_context": 1.0,
+      "citation_page_precision": 1.0,
+      "citation_page_recall": 1.0,
+      "id": "mb-q4",
+      "question": "What post-treatment follow-up duration did the committee consider a reasonable target, and what could make that target vary?",
+      "prediction": "The committee judged a follow‑up period roughly equal to the drug’s active duration—about 7.5 months after the last dose of IPTi‑SP—as a reasonable target [p. 18]. That target could vary with the intensity of malaria transmission, since higher transmission settings might alter the timing and magnitude of rebound infections [p. 18].",
+      "answers": [
+        "A follow-up period similar in length to the time directly under the influence of SP was considered a reasonable target; for a 7.5-month dosing period, the example target was another 7.5 months after the final dose. The target could vary with malaria transmission intensity and the resulting potential for rebound infection."
+      ],
+      "gold_pages": [
+        18
+      ],
+      "retrieved_pages": [
+        3,
+        4,
+        10,
+        12,
+        13,
+        18
+      ],
+      "final_context_pages": [
+        4,
+        10,
+        12,
+        13,
+        18
+      ]
+    },
+    {
+      "abstained": 1.0,
+      "id": "mb-q5",
+      "question": "Which of the six IPTi-SP trials had the largest reduction in clinical malaria, and what was its exact efficacy estimate?",
+      "prediction": "The provided passages do not contain the specific trial name or the exact efficacy estimate for the IPTi‑SP trial that achieved the largest reduction in clinical malaria.",
+      "answers": [],
+      "gold_pages": [],
+      "retrieved_pages": [
+        3,
+        12,
+        13,
+        18
+      ],
+      "final_context_pages": [
+        3,
+        12,
+        13,
+        18
+      ]
+    }
+  ],
+  "run_metadata": {
+    "source_pdf": "medbook.pdf",
+    "indexed_pdf_pages": [
+      3,
+      4,
+      10,
+      11,
+      12,
+      13,
+      18
+    ],
+    "model": "openai/gpt-oss-20b",
+    "reasoning_effort": "low",
+    "question_set": "medbook-demo_questions.jsonl",
+    "successful_api_requests": 5,
+    "api_token_usage": {
+      "prompt_tokens": 31289,
+      "completion_tokens": 549,
+      "total_tokens": 31838
+    },
+    "rescored_locally": true
+  }
+}
